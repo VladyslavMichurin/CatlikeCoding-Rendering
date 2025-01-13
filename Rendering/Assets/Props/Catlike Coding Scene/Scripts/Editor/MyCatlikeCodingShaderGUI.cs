@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEditor;
-using Codice.Client.BaseCommands;
+using UnityEngine.Rendering;
 
 public class MyCatlikeCodingShaderGUI : ShaderGUI
 {
@@ -12,6 +12,32 @@ public class MyCatlikeCodingShaderGUI : ShaderGUI
     {
         Uniform, Albedo, Metallic
     }
+    enum RenderingMode
+    {
+        Opaque, Cutout, Fade, Transparent
+    }
+    bool shouldShowAlphaCutoff;
+
+    struct RenderingSettings
+    {
+        public RenderQueue queue;
+        public string renderType;
+        public BlendMode srcBlend, dstBlend;
+        public bool zWrite;
+
+        public static RenderingSettings[] modes =
+        {
+            new RenderingSettings() { queue = RenderQueue.Geometry, renderType = "",
+                srcBlend =  BlendMode.One, dstBlend = BlendMode.Zero, zWrite = true},
+            new RenderingSettings() { queue = RenderQueue.AlphaTest, renderType = "TransparentCutout",
+            srcBlend =  BlendMode.One, dstBlend = BlendMode.Zero, zWrite = true},
+            new RenderingSettings() { queue = RenderQueue.Transparent, renderType = "Transparent",
+            srcBlend =  BlendMode.SrcAlpha, dstBlend = BlendMode.OneMinusSrcAlpha, zWrite = false},
+            new RenderingSettings() { queue = RenderQueue.Transparent, renderType = "Transparent",
+                srcBlend = BlendMode.One, dstBlend = BlendMode.OneMinusSrcAlpha,zWrite = false
+            }
+        };
+    }
 
     public override void OnGUI(MaterialEditor _materialEditor, MaterialProperty[] _properties)
     {
@@ -19,8 +45,51 @@ public class MyCatlikeCodingShaderGUI : ShaderGUI
         this.editor = _materialEditor;
         this.properties = _properties;
 
+        DoRenderingMode(); 
         DoMain();
         DoSecondary();
+    }
+
+    void DoRenderingMode()
+    {
+        RenderingMode mode = RenderingMode.Opaque;
+        shouldShowAlphaCutoff = false;
+
+        if (IsKeywordEnabled("_RENDERING_CUTOUT"))
+        {
+            mode = RenderingMode.Cutout;
+            shouldShowAlphaCutoff = true;
+        }
+        else if (IsKeywordEnabled("_RENDERING_FADE"))
+        {
+            mode = RenderingMode.Fade;
+        }
+        else if (IsKeywordEnabled("_RENDERING_TRANSPARENT"))
+        {
+            mode = RenderingMode.Transparent;
+        }
+
+        EditorGUI.BeginChangeCheck();
+
+        mode = (RenderingMode)EditorGUILayout.EnumPopup(MakeLabel("Rendering Mode"), mode);
+
+        if (EditorGUI.EndChangeCheck())
+        {
+            RecordAction("Rendering Mode");
+            SetKeyword("_RENDERING_CUTOUT", mode == RenderingMode.Cutout);
+            SetKeyword("_RENDERING_FADE", mode == RenderingMode.Fade);
+            SetKeyword("_RENDERING_TRANSPARENT", mode == RenderingMode.Transparent);
+
+            RenderingSettings settings = RenderingSettings.modes[(int)mode];
+            foreach (Material m in editor.targets)
+            {
+                m.renderQueue = (int)settings.queue;
+                m.SetOverrideTag("RenderType", settings.renderType);
+                m.SetInt("_SrcBlend", (int)settings.srcBlend);
+                m.SetInt("_DstBlend", (int)settings.dstBlend);
+                m.SetInt("_ZWrite", settings.zWrite ? 1 : 0);
+            }
+        }
     }
 
     void DoMain()
@@ -39,6 +108,10 @@ public class MyCatlikeCodingShaderGUI : ShaderGUI
         DoOcclusion();
         DoEmission();
         DoDetailMask();
+        if(shouldShowAlphaCutoff)
+        {
+            DoAlphaCutoff();
+        }
 
         editor.TextureScaleOffsetProperty(mainTex);
 
@@ -154,6 +227,17 @@ public class MyCatlikeCodingShaderGUI : ShaderGUI
         {
             SetKeyword("_DETAIL_MASK", detailMaskMap.textureValue);
         }
+    }
+    void DoAlphaCutoff()
+    {
+        MaterialProperty alphaCutoff = FindProperty("_AlphaCutoff");
+        GUIContent aplhaCutoffLabel = MakeLabel(alphaCutoff);
+
+        EditorGUI.indentLevel += 2;
+
+        editor.ShaderProperty(alphaCutoff, aplhaCutoffLabel);   
+
+        EditorGUI.indentLevel -= 2; 
     }
 
     void DoSecondary()
