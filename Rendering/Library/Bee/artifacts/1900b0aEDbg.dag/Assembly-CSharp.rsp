@@ -352,14 +352,14 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.UI.ref.dll"
 -analyzer:"D:/programs/Unity Editors/2022.3.7f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"D:/programs/Unity Editors/2022.3.7f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/Props/Catlike Coding Scene/Scripts/Rendering 1/CameraTransformation.cs"
-"Assets/Props/Catlike Coding Scene/Scripts/Rendering 1/PositionTransformation.cs"
-"Assets/Props/Catlike Coding Scene/Scripts/Rendering 1/RotationTransformation.cs"
-"Assets/Props/Catlike Coding Scene/Scripts/Rendering 1/ScalingTransformation.cs"
-"Assets/Props/Catlike Coding Scene/Scripts/Rendering 1/Transformation.cs"
-"Assets/Props/Catlike Coding Scene/Scripts/Rendering 1/TransformationGrid.cs"
-"Assets/Props/Catlike Coding Scene/Scripts/Rendering 6/TangentSpaceVisualizer.cs"
-"Assets/Props/Catlike Coding Scene/Scripts/Rendering 8/MoveBetweenPoints.cs"
+"Assets/Props/Scripts/Rendering 1/CameraTransformation.cs"
+"Assets/Props/Scripts/Rendering 1/PositionTransformation.cs"
+"Assets/Props/Scripts/Rendering 1/RotationTransformation.cs"
+"Assets/Props/Scripts/Rendering 1/ScalingTransformation.cs"
+"Assets/Props/Scripts/Rendering 1/Transformation.cs"
+"Assets/Props/Scripts/Rendering 1/TransformationGrid.cs"
+"Assets/Props/Scripts/Rendering 6/TangentSpaceVisualizer.cs"
+"Assets/Props/Scripts/Rendering 8/MoveBetweenPoints.cs"
 -langversion:9.0
 
 /deterministic
