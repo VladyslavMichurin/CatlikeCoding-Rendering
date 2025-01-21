@@ -15,7 +15,7 @@ D:/projects/Git/CatlikeCoding-Rendering/Rendering
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52514
+59987
 Successfully changed project path to: D:/projects/Git/CatlikeCoding-Rendering/Rendering
 D:/projects/Git/CatlikeCoding-Rendering/Rendering
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ D:/projects/Git/CatlikeCoding-Rendering/Rendering
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [10260] Host "[IP] 192.168.2.221 [Port] 0 [Flags] 2 [Guid] 3958512437 [EditorId] 3958512437 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J5TC0EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [25300] Host "[IP] 192.168.2.221 [Port] 0 [Flags] 2 [Guid] 4205361398 [EditorId] 4205361398 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J5TC0EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [10260] Host "[IP] 192.168.2.221 [Port] 0 [Flags] 2 [Guid] 3958512437 [EditorId] 3958512437 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J5TC0EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [25300] Host "[IP] 192.168.2.221 [Port] 0 [Flags] 2 [Guid] 4205361398 [EditorId] 4205361398 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J5TC0EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 5.86 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 6.58 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.7f1 (b16b3b16c7a0)
 [Subsystems] Discovering subsystems at path D:/programs/Unity Editors/2022.3.7f1/Editor/Data/Resources/UnitySubsystems
@@ -69,46 +69,46 @@ Initialize mono
 Mono path[0] = 'D:/programs/Unity Editors/2022.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'D:/programs/Unity Editors/2022.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/programs/Unity Editors/2022.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56456
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56780
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/programs/Unity Editors/2022.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: D:/programs/Unity Editors/2022.3.7f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.005169 seconds.
-- Loaded All Assemblies, in  0.355 seconds
+Registered in 0.005634 seconds.
+- Loaded All Assemblies, in  0.374 seconds
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.267 seconds
-Domain Reload Profiling: 622ms
-	BeginReloadAssembly (106ms)
+- Finished resetting the current domain, in  0.285 seconds
+Domain Reload Profiling: 659ms
+	BeginReloadAssembly (109ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (50ms)
-	LoadAllAssembliesAndSetupDomain (155ms)
-		LoadAssemblies (106ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (158ms)
+		LoadAssemblies (109ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (153ms)
-			TypeCache.Refresh (151ms)
-				TypeCache.ScanAssembly (137ms)
+		AnalyzeDomain (156ms)
+			TypeCache.Refresh (155ms)
+				TypeCache.ScanAssembly (141ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (267ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (285ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (205ms)
+		SetupLoadedEditorAssemblies (215ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
+			InitializePlatformSupportModulesInManaged (10ms)
 			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (133ms)
-			ProcessInitializeOnLoadMethodAttributes (54ms)
+			ProcessInitializeOnLoadAttributes (137ms)
+			ProcessInitializeOnLoadMethodAttributes (59ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -118,150 +118,53 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.616 seconds
-Refreshing native plugins compatible for Editor in 1.83 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.628 seconds
+Refreshing native plugins compatible for Editor in 2.29 ms, found 3 plugins.
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.566 seconds
-Domain Reload Profiling: 1181ms
-	BeginReloadAssembly (151ms)
+- Finished resetting the current domain, in  0.560 seconds
+Domain Reload Profiling: 1188ms
+	BeginReloadAssembly (146ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (25ms)
-	RebuildCommonClasses (36ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (35ms)
-	LoadAllAssembliesAndSetupDomain (380ms)
-		LoadAssemblies (285ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (395ms)
+		LoadAssemblies (297ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (180ms)
+		AnalyzeDomain (179ms)
 			TypeCache.Refresh (159ms)
-				TypeCache.ScanAssembly (145ms)
-			ScanForSourceGeneratedMonoScriptInfo (15ms)
+				TypeCache.ScanAssembly (143ms)
+			ScanForSourceGeneratedMonoScriptInfo (14ms)
 			ResolveRequiredComponents (5ms)
-	FinalizeReload (566ms)
+	FinalizeReload (561ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (409ms)
+		SetupLoadedEditorAssemblies (394ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (6ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (86ms)
-			ProcessInitializeOnLoadAttributes (281ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.85 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3086 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (56.4 KB). Loaded Objects now: 3548.
-Memory consumption went from 117.7 MB to 117.6 MB.
-Total: 4.116100 ms (FindLiveObjects: 0.301800 ms CreateObjectMapping: 0.263100 ms MarkObjects: 3.438700 ms  DeleteObjects: 0.111300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 37607.222278 seconds.
-  path: Assets/Props/Catlike Coding Scene/Materials/Rendering 12
-  artifactKey: Guid(f2671b4916a5d2042899987a3e81ddf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Catlike Coding Scene/Materials/Rendering 12 using Guid(f2671b4916a5d2042899987a3e81ddf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2189696b6b9b0d4ff3354d0159739d91') in 0.002299 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 9.544800 seconds.
-  path: Assets/Scenes/CatlikeCoding/8
-  artifactKey: Guid(1abf4d830f6436a40b8a3b956323006d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/CatlikeCoding/8 using Guid(1abf4d830f6436a40b8a3b956323006d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa2b22e9ba80ed1029004daf44320fd6') in 0.014467 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 30.160270 seconds.
-  path: Assets/Scenes/12.unity
-  artifactKey: Guid(6f5fd3ff86de9384e85578ed84fdb38a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/12.unity using Guid(6f5fd3ff86de9384e85578ed84fdb38a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28d922f1b1d58e5b05ae90aa7d26e87e') in 0.000374 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 157.312174 seconds.
-  path: Assets/Props/Catlike Coding Scene/Materials/Rendering 12/Semi-transparent Shadows.mat
-  artifactKey: Guid(4ccf4a1cd9a4ee746be8c2f3cc5de419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Catlike Coding Scene/Materials/Rendering 12/Semi-transparent Shadows.mat using Guid(4ccf4a1cd9a4ee746be8c2f3cc5de419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04ee124b57ffbebe4913202d23cd5017') in 0.134469 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.448 seconds
-Refreshing native plugins compatible for Editor in 1.70 ms, found 3 plugins.
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.774 seconds
-Domain Reload Profiling: 1222ms
-	BeginReloadAssembly (154ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (33ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (222ms)
-		LoadAssemblies (279ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (30ms)
-			TypeCache.Refresh (12ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (11ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (774ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (352ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
 			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (84ms)
-			ProcessInitializeOnLoadAttributes (236ms)
-			ProcessInitializeOnLoadMethodAttributes (19ms)
+			BeforeProcessingInitializeOnLoad (90ms)
+			ProcessInitializeOnLoadAttributes (263ms)
+			ProcessInitializeOnLoadMethodAttributes (28ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 1.79 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (11ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Refreshing native plugins compatible for Editor in 1.80 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3067 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (30.5 KB). Loaded Objects now: 3592.
-Memory consumption went from 118.6 MB to 118.6 MB.
-Total: 2.515100 ms (FindLiveObjects: 0.238600 ms CreateObjectMapping: 0.208900 ms MarkObjects: 2.031300 ms  DeleteObjects: 0.035700 ms)
+Unloading 3087 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (56.3 KB). Loaded Objects now: 3549.
+Memory consumption went from 118.1 MB to 118.1 MB.
+Total: 2.802200 ms (FindLiveObjects: 0.240800 ms CreateObjectMapping: 0.232000 ms MarkObjects: 2.243700 ms  DeleteObjects: 0.084900 ms)
 
-Prepare: number of updated asset objects reloaded= 7
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -277,808 +180,819 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 51.546665 seconds.
-  path: Assets/Props/Scripts/12
-  artifactKey: Guid(0c9dd12e312a8a14ab731887360a58eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/12 using Guid(0c9dd12e312a8a14ab731887360a58eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5604a41d23f385bdf545bc167fc20f1') in 0.002702 seconds
+  Time since last request: 125365.597902 seconds.
+  path: Assets/Scenes/13.unity
+  artifactKey: Guid(c9a9fc5cd5304574ca09e7b964d9f4de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/13.unity using Guid(c9a9fc5cd5304574ca09e7b964d9f4de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf974dc6b57eac893a0671134a3f6085') in 0.002437 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 6.593000 seconds.
-  path: Assets/Props/Scripts/Rendering 12
-  artifactKey: Guid(0c9dd12e312a8a14ab731887360a58eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 12 using Guid(0c9dd12e312a8a14ab731887360a58eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cf00d9faeb0b91b9d3355987effbc10') in 0.000420 seconds
+  Time since last request: 83182.870358 seconds.
+  path: Assets/Props/Materials/Rendering 13
+  artifactKey: Guid(ff3ea285dfc80be4c96ed35be8f5e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Materials/Rendering 13 using Guid(ff3ea285dfc80be4c96ed35be8f5e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9e009aef4d5fbd5b20f30960e19508e') in 0.006096 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 1.141056 seconds.
-  path: Assets/Props/Scripts/Rendering 11/My Lighting.cginc
-  artifactKey: Guid(e91cd35d6303fa540818f04a1ca90f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 11/My Lighting.cginc using Guid(e91cd35d6303fa540818f04a1ca90f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0381d9789440ac39be6eb8bd6fa36177') in 0.008586 seconds
+  Time since last request: 9.175585 seconds.
+  path: Assets/Props/Prefabs/Cube.prefab
+  artifactKey: Guid(f44ff3f6b4ef64940abd2b528526bcb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Prefabs/Cube.prefab using Guid(f44ff3f6b4ef64940abd2b528526bcb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '517f38e962aeb23220dbd4219e8e1ada') in 0.232499 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 7
 ========================================================================
 Received Import Request.
-  Time since last request: 6.391446 seconds.
-  path: Assets/Props/Scripts/Rendering 12/My Lighting.cginc
-  artifactKey: Guid(54b9ee6a99de4ad4999f3549fea04651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 12/My Lighting.cginc using Guid(54b9ee6a99de4ad4999f3549fea04651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2e4add395fb42e46752df5bdeb79fd6') in 0.001283 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 7.532554 seconds.
-  path: Assets/Props/Scripts/Rendering 12/Transparency.shader
-  artifactKey: Guid(587b44619df80284a8a039f1271dfefc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 12/Transparency.shader using Guid(587b44619df80284a8a039f1271dfefc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c9c07bfbbe576496958e2bd14bae942') in 0.001405 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 186.546689 seconds.
-  path: Assets/Props/Scripts/Rendering 12/Semi-Transparent Shadows.shader
-  artifactKey: Guid(587b44619df80284a8a039f1271dfefc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 12/Semi-Transparent Shadows.shader using Guid(587b44619df80284a8a039f1271dfefc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd72d228a0c61b3b3065c8fb82f56502a') in 0.001781 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 12.441597 seconds.
-  path: Assets/Props/Scripts/Rendering 12/Semitransparent Shadows.shader
-  artifactKey: Guid(587b44619df80284a8a039f1271dfefc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 12/Semitransparent Shadows.shader using Guid(587b44619df80284a8a039f1271dfefc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf53cfdfdb79b94d1e5c9105feb1acae') in 0.001234 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 21.872653 seconds.
-  path: Assets/Props/Materials/Rendering 12/Semitransparent Shadows.mat
-  artifactKey: Guid(4ccf4a1cd9a4ee746be8c2f3cc5de419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Materials/Rendering 12/Semitransparent Shadows.mat using Guid(4ccf4a1cd9a4ee746be8c2f3cc5de419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cccdcfb79ca1345d274eba42a5b30bc3') in 0.072948 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 3.591705 seconds.
-  path: Assets/Props/Materials/Rendering 12/Semitransparent Shadows Mat.mat
-  artifactKey: Guid(4ccf4a1cd9a4ee746be8c2f3cc5de419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Materials/Rendering 12/Semitransparent Shadows Mat.mat using Guid(4ccf4a1cd9a4ee746be8c2f3cc5de419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9b013eb694ddbfa39a37a63413c919a') in 0.012998 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 476.542947 seconds.
-  path: Assets/Props/Scripts/Rendering 12/Semitransparent Shadows.shader
-  artifactKey: Guid(587b44619df80284a8a039f1271dfefc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 12/Semitransparent Shadows.shader using Guid(587b44619df80284a8a039f1271dfefc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad26c6ff9894895c0da7aa739d192b7a') in 0.002065 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 3.004958 seconds.
-  path: Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI.cs
-  artifactKey: Guid(83af9450fc8bae145b4bc2fce5b0df75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI.cs using Guid(83af9450fc8bae145b4bc2fce5b0df75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abc78a55105dcc78419e1eb2a9e3eb82') in 0.000376 seconds
+  Time since last request: 15.463752 seconds.
+  path: Assets/Props/Scripts/Rendering 13
+  artifactKey: Guid(b291a346a60b7914486eba31215e4483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Scripts/Rendering 13 using Guid(b291a346a60b7914486eba31215e4483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1bccb43b7eac18c3352cd1b175210ae') in 0.000434 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 423.399152 seconds.
+  Time since last request: 8118.499347 seconds.
+  path: Assets/UniversalRenderPipelineGlobalSettings.asset
+  artifactKey: Guid(18dc0cd2c080841dea60987a38ce93fa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(18dc0cd2c080841dea60987a38ce93fa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '222e3d0f875b94a1acc3d0830e15658e') in 0.195255 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.167576 seconds.
   path: Assets/Scenes/11.unity
-  artifactKey: Guid(ae8143861f0326248a4944e6d41cb59a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/11.unity using Guid(ae8143861f0326248a4944e6d41cb59a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55baae808a8bc38fbefcc8ebce104c18') in 0.000583 seconds
+  artifactKey: Guid(ae8143861f0326248a4944e6d41cb59a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/11.unity using Guid(ae8143861f0326248a4944e6d41cb59a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '57464647daabebee3b190d5563aa3939') in 0.014547 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 326.226152 seconds.
-  path: Assets/Props/Textures/0_Before 9/binary-splat-map.png
-  artifactKey: Guid(941f6e17d4291ce429277e1eb470e37c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Textures/0_Before 9/binary-splat-map.png using Guid(941f6e17d4291ce429277e1eb470e37c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbff1d880b9c306b4f57eb271ef61d86') in 0.041215 seconds
+  Time since last request: 1.007498 seconds.
+  path: Assets/Scenes/13.unity
+  artifactKey: Guid(c9a9fc5cd5304574ca09e7b964d9f4de) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/13.unity using Guid(c9a9fc5cd5304574ca09e7b964d9f4de) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '490605f0ba3bc55a8afc7e8e10ccf070') in 0.010556 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000017 seconds.
-  path: Assets/Props/Textures/9-10/circuitry-detail-albedo.png
-  artifactKey: Guid(f47611eb57b6dd841a512fbcddf477c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Textures/9-10/circuitry-detail-albedo.png using Guid(f47611eb57b6dd841a512fbcddf477c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c71baa5422480bbb53ad75179788ce73') in 0.028507 seconds
+  path: Assets/Scenes/8.unity
+  artifactKey: Guid(dc486e478b1ade6498af48c885d331b6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/8.unity using Guid(dc486e478b1ade6498af48c885d331b6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7ac6f3bb99c72bd66039d9340102b814') in 0.010672 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.017367 seconds.
-  path: Assets/Props/Textures/9-10/circuitry-detail-normal.png
-  artifactKey: Guid(503abc306cf67054f8f0fe9e7bc637e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Textures/9-10/circuitry-detail-normal.png using Guid(503abc306cf67054f8f0fe9e7bc637e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04e862100dda84249b4b9a295df494d9') in 0.059531 seconds
+  Time since last request: 0.000020 seconds.
+  path: Assets/Settings/URP-Performant-Renderer.asset
+  artifactKey: Guid(707360a9c581a4bd7aa53bfeb1429f71) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Settings/URP-Performant-Renderer.asset using Guid(707360a9c581a4bd7aa53bfeb1429f71) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9a95de2b6cd9ef9c0b9b775bdaa579f0') in 0.181622 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.035867 seconds.
-  path: Assets/Props/Textures/9-10/circuitry-metallic.png
-  artifactKey: Guid(8dcbebbd6a27d3448abe4b454c1615eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Textures/9-10/circuitry-metallic.png using Guid(8dcbebbd6a27d3448abe4b454c1615eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df4e8ab26224a786d5b7330434021f02') in 0.028244 seconds
+  Time since last request: 0.000017 seconds.
+  path: Assets/Props/Materials/Rendering 6/Bump Rendering.mat
+  artifactKey: Guid(d0e3f30bf78bfd34ebadb3267fedf1e3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Materials/Rendering 6/Bump Rendering.mat using Guid(d0e3f30bf78bfd34ebadb3267fedf1e3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '57b8234973a02dd8234bf430833c536f') in 0.307848 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 5
 ========================================================================
 Received Import Request.
-  Time since last request: 0.067111 seconds.
-  path: Assets/Props/Textures/9-10/circuitry-metallic-occlusion-smoothness.png
-  artifactKey: Guid(38235d4367ba37442a727a570e3ed487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Textures/9-10/circuitry-metallic-occlusion-smoothness.png using Guid(38235d4367ba37442a727a570e3ed487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bac09ce30c1a350b613783bb7d1ee06') in 0.015015 seconds
+  Time since last request: 0.000023 seconds.
+  path: Assets/Props/Scripts/Rendering 9/My Lighting 5.cginc
+  artifactKey: Guid(893a0415c3e3eb34691c9df475213f8d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Scripts/Rendering 9/My Lighting 5.cginc using Guid(893a0415c3e3eb34691c9df475213f8d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '589c37fbc6b5e7c64d24dc3c6a16f83d') in 0.063934 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.027810 seconds.
-  path: Assets/Props/Textures/9-10/circuitry-metallic-smoothness.png
-  artifactKey: Guid(7948fe375dc68d2419389609279cac73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Textures/9-10/circuitry-metallic-smoothness.png using Guid(7948fe375dc68d2419389609279cac73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a19924a73ea5d59fb92e3dcefd815f98') in 0.024356 seconds
+  Time since last request: 0.000021 seconds.
+  path: Assets/Props/Scripts/Rendering 1/ScalingTransformation.cs
+  artifactKey: Guid(37ad2b905d96c2b4887f9f11310a8da3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Scripts/Rendering 1/ScalingTransformation.cs using Guid(37ad2b905d96c2b4887f9f11310a8da3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c03f9d7e02aec3a34ee1519e16245e7f') in 0.026118 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.035594 seconds.
-  path: Assets/Props/Textures/9-10/circuitry-normals 1.png
-  artifactKey: Guid(c8a9a0dc5a920134cbb2fea77c2fdcd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Textures/9-10/circuitry-normals 1.png using Guid(c8a9a0dc5a920134cbb2fea77c2fdcd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e6985f6697df502911ae9e46893c939') in 0.017270 seconds
+  Time since last request: 0.000016 seconds.
+  path: Assets/Props/Scripts/Rendering 1/CameraTransformation.cs
+  artifactKey: Guid(11c2662a0514aa248ab0aa5e6c0f509c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Scripts/Rendering 1/CameraTransformation.cs using Guid(11c2662a0514aa248ab0aa5e6c0f509c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '254623c387bfd9c8f5c32cb0d2221966') in 0.030709 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002432 seconds.
-  path: Assets/Props/Textures/9-10/circuitry-occlusion.png
-  artifactKey: Guid(32241406f4d506441a8ffc0704e4f7e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Textures/9-10/circuitry-occlusion.png using Guid(32241406f4d506441a8ffc0704e4f7e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22706501f2898087863d47e4d3ba575b') in 0.014323 seconds
+  Time since last request: 0.000021 seconds.
+  path: Assets/Props/Textures/0_Before 9/grid.png
+  artifactKey: Guid(470aa5c80b23084498af84a35071c45b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Textures/0_Before 9/grid.png using Guid(470aa5c80b23084498af84a35071c45b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '121f3ab6d4d819df940b3017f689c0b5') in 0.077937 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.006313 seconds.
-  path: Assets/Props/Textures/0_Before 9/directional-cookie.png
-  artifactKey: Guid(4a4c332bd020ec44596d66c04cc443aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Textures/0_Before 9/directional-cookie.png using Guid(4a4c332bd020ec44596d66c04cc443aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00f3ff2eb7fef07a502efb20e21cdc65') in 0.042961 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.009555 seconds.
-  path: Assets/Props/Textures/9-10/lava-albedo-smoothness.png
-  artifactKey: Guid(edb1c3b0284d3834e9f6ef659f8189e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Textures/9-10/lava-albedo-smoothness.png using Guid(edb1c3b0284d3834e9f6ef659f8189e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad021c49c8434a119ac6cb30712c0c51') in 0.018436 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Props/Textures/9-10/lava-normals.png
-  artifactKey: Guid(2cd849b255df7734882164a0f45a65b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Textures/9-10/lava-normals.png using Guid(2cd849b255df7734882164a0f45a65b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d087db7d877d5124faa7439064b2259') in 0.035756 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.014533 seconds.
+  Time since last request: 0.000016 seconds.
   path: Assets/Scenes/8/Lightmap-0_comp_light.exr
-  artifactKey: Guid(0235b2d9b61a62e42b6c3da3159605f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/8/Lightmap-0_comp_light.exr using Guid(0235b2d9b61a62e42b6c3da3159605f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed27b29e70f0df2f200eaf1c92583c1a') in 0.040768 seconds
+  artifactKey: Guid(0235b2d9b61a62e42b6c3da3159605f6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/8/Lightmap-0_comp_light.exr using Guid(0235b2d9b61a62e42b6c3da3159605f6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7d496f4dcd3dac08fccc702ab2e9ffa5') in 0.447509 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.006581 seconds.
-  path: Assets/Scenes/8/Lightmap-1_comp_light.exr
-  artifactKey: Guid(c31c3488d83137d46abc235953d55ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/8/Lightmap-1_comp_light.exr using Guid(c31c3488d83137d46abc235953d55ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4081592f3a1925d24d6f41db0d136bca') in 0.017873 seconds
+  Time since last request: 0.000022 seconds.
+  path: Assets/Props/Textures/9-10/circuitry-metallic.png
+  artifactKey: Guid(8dcbebbd6a27d3448abe4b454c1615eb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Textures/9-10/circuitry-metallic.png using Guid(8dcbebbd6a27d3448abe4b454c1615eb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '86557ba069e12cb9384d5cec0f851ae8') in 0.082487 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.026137 seconds.
-  path: Assets/Scenes/8/Lightmap-2_comp_light.exr
-  artifactKey: Guid(a76bba1b3c47fd840855d7ad676b7cd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/8/Lightmap-2_comp_light.exr using Guid(a76bba1b3c47fd840855d7ad676b7cd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0ab20f4b6f4d4786ef99027505fa13c') in 0.013672 seconds
+  Time since last request: 0.000024 seconds.
+  path: Assets/Props/Textures/9-10/circuitry-detail-normal.png
+  artifactKey: Guid(503abc306cf67054f8f0fe9e7bc637e1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Textures/9-10/circuitry-detail-normal.png using Guid(503abc306cf67054f8f0fe9e7bc637e1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd0c44c58e97de4c051e2a46c4e0c2bab') in 0.059438 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.006743 seconds.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Props/Materials/Rendering 8/Reflections.mat
+  artifactKey: Guid(dc3fe176ee664884495c21f4ef2e1502) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Materials/Rendering 8/Reflections.mat using Guid(dc3fe176ee664884495c21f4ef2e1502) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6279f4e3bbf365b3eac2dafd8fa310bd') in 0.024685 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Props/Materials/Rendering 10/Lava 2.mat
+  artifactKey: Guid(4316fc520cd7792409593b1770aaa2d0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Materials/Rendering 10/Lava 2.mat using Guid(4316fc520cd7792409593b1770aaa2d0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e52ed15a31d4e72bbf84f7e5b8bcf79a') in 0.180506 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
   path: Assets/Props/Textures/0_Before 9/marble-detail.png
-  artifactKey: Guid(995386397ed6727458a04d7b9e5fb563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Textures/0_Before 9/marble-detail.png using Guid(995386397ed6727458a04d7b9e5fb563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb56f17ab656bd8631a889fd479b2029') in 0.024811 seconds
+  artifactKey: Guid(995386397ed6727458a04d7b9e5fb563) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Textures/0_Before 9/marble-detail.png using Guid(995386397ed6727458a04d7b9e5fb563) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0fc920d0e4a9df51f7133447f488ae20') in 0.033633 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Props/Textures/0_Before 9/marble-heights.png
-  artifactKey: Guid(7da34b2e3a9e92c4f882174be3fb766d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Textures/0_Before 9/marble-heights.png using Guid(7da34b2e3a9e92c4f882174be3fb766d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2442d34376ed92ec02976a0e48e2f114') in 0.018251 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.005856 seconds.
-  path: Assets/Props/Textures/0_Before 9/point-cookie.png
-  artifactKey: Guid(e0bb0ced8f87f2144aeb7f729ee53dd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Textures/0_Before 9/point-cookie.png using Guid(e0bb0ced8f87f2144aeb7f729ee53dd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8421a49a6a0278d5a74534d99b6d0a5') in 0.034591 seconds
+  Time since last request: 0.000050 seconds.
+  path: Assets/Scenes/8/ReflectionProbe-2.exr
+  artifactKey: Guid(238d13c24673a014dab4050e9d18fd49) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/8/ReflectionProbe-2.exr using Guid(238d13c24673a014dab4050e9d18fd49) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cad7c8c3fe78a351ca31cf226bdc3ae3') in 0.075812 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000015 seconds.
-  path: Assets/Scenes/8/ReflectionProbe-1.exr
-  artifactKey: Guid(35a6ce035718f074e94f7e9096ebc198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/8/ReflectionProbe-1.exr using Guid(35a6ce035718f074e94f7e9096ebc198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d3e968862aec23a378cc8036a040b9b') in 0.034449 seconds
+  path: Assets/Props/Textures/9-10/lava-emission.png
+  artifactKey: Guid(7d3aca778b537f948bfd4050d6807a62) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Textures/9-10/lava-emission.png using Guid(7d3aca778b537f948bfd4050d6807a62) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c16d3e86fc96c7d7f03ab21fdc1a260b') in 0.032329 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Props/Scripts/Rendering 11/My Shadows.cginc
+  artifactKey: Guid(bf854bb13f4640b47b756d5ae984bd4e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Scripts/Rendering 11/My Shadows.cginc using Guid(bf854bb13f4640b47b756d5ae984bd4e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1c74d7c72ca103afd004930b774a2575') in 0.040667 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Props/Scripts/Rendering 6/My Lighting 2.cginc
+  artifactKey: Guid(d9e815ab6a29ab743afe46ab32d9f2f2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Scripts/Rendering 6/My Lighting 2.cginc using Guid(d9e815ab6a29ab743afe46ab32d9f2f2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '72aad93ea9febe2fb9d9b059bdab11bf') in 0.060295 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Props/Textures/0_Before 9/marble.png
+  artifactKey: Guid(cef7e0825fb01954bbb29ac8dd85039c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Textures/0_Before 9/marble.png using Guid(cef7e0825fb01954bbb29ac8dd85039c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'af923358f7dbf82434341e54e5fd0aaf') in 0.029787 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Props/Materials/Rendering 9/Lava.mat
+  artifactKey: Guid(d463e7e643c639647a3b545042fd6a4c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Materials/Rendering 9/Lava.mat using Guid(d463e7e643c639647a3b545042fd6a4c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bf3d3c5e09cbe6138963715f21e435b4') in 0.067438 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Props/Scripts/Rendering 11/Transparency.shader
+  artifactKey: Guid(24be6bbc8fd29d6469dbf323915760f5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Scripts/Rendering 11/Transparency.shader using Guid(24be6bbc8fd29d6469dbf323915760f5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bb93e75f50d46e355304de73985ca4b2') in 0.052528 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Props/Scripts/Rendering 1/TransformationGrid.cs
+  artifactKey: Guid(ff14e195cf6839a44a1c8ffafa6150df) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Scripts/Rendering 1/TransformationGrid.cs using Guid(ff14e195cf6839a44a1c8ffafa6150df) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'afeedbbe2ed90d8b138d8c36b213d0e9') in 0.018614 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Props/Scripts/Rendering 10/More Complex Materials.shader
+  artifactKey: Guid(b06b5a0e78cb1e341bc7076814257fbd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Scripts/Rendering 10/More Complex Materials.shader using Guid(b06b5a0e78cb1e341bc7076814257fbd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f823adce8b6a73290825fc21bc339fca') in 0.020267 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Scenes/8/Lightmap-0_comp_dir.png
+  artifactKey: Guid(03d3d28857b31e54f8c8b9ff42f81344) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/8/Lightmap-0_comp_dir.png using Guid(03d3d28857b31e54f8c8b9ff42f81344) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '37ded5facb8685bd99b0dee3a8c81fe3') in 0.055600 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Props/Scripts/Rendering 12/My Shadows.cginc
+  artifactKey: Guid(44686f3b4a195bb4583fa7fbbed9636a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Scripts/Rendering 12/My Shadows.cginc using Guid(44686f3b4a195bb4583fa7fbbed9636a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4f7614ded4b66463c0d53c1acc4ec558') in 0.034114 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Props/Textures/9-10/lava-normals.png
+  artifactKey: Guid(2cd849b255df7734882164a0f45a65b9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Textures/9-10/lava-normals.png using Guid(2cd849b255df7734882164a0f45a65b9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0b9d852d8dc4d620d48977893e1cbddf') in 0.033333 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Props/Scripts/Rendering 10/My Shadows 4.cginc
+  artifactKey: Guid(4e552b75c06d6914b9685603a63d6e9f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Scripts/Rendering 10/My Shadows 4.cginc using Guid(4e552b75c06d6914b9685603a63d6e9f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9ed63361423341ed47235513c1837db6') in 0.015702 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Props/Textures/9-10/Materials/circuitry-metallic-occlusion-smoothness.mat
+  artifactKey: Guid(efe9921f0fdd1de45b9dc0f3a2120123) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Textures/9-10/Materials/circuitry-metallic-occlusion-smoothness.mat using Guid(efe9921f0fdd1de45b9dc0f3a2120123) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8ac2ae79d6bb25dca2ddc54e89a546b2') in 0.068593 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Settings/URP-HighFidelity.asset
+  artifactKey: Guid(7b7fd9122c28c4d15b667c7040e3b3fd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Settings/URP-HighFidelity.asset using Guid(7b7fd9122c28c4d15b667c7040e3b3fd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c152b1d1dad3eca4da7607ef7e9e92c1') in 0.039963 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Settings/URP-Performant.asset
+  artifactKey: Guid(d0e2fc18fe036412f8223b3b3d9ad574) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Settings/URP-Performant.asset using Guid(d0e2fc18fe036412f8223b3b3d9ad574) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd3c6e3f383389b8d18f4b5cde38a107a') in 0.019900 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Props/Scripts/Rendering 5/MultipleLights.shader
+  artifactKey: Guid(ea93fbb55c92693479d11b7997a9410b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Scripts/Rendering 5/MultipleLights.shader using Guid(ea93fbb55c92693479d11b7997a9410b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f2b4e8b0d529f5285d6daee93666d95b') in 0.029317 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Props/Textures/9-10/circuitry-normals 1.png
+  artifactKey: Guid(c8a9a0dc5a920134cbb2fea77c2fdcd0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Textures/9-10/circuitry-normals 1.png using Guid(c8a9a0dc5a920134cbb2fea77c2fdcd0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1203a02749d5e81f4aaac6fba5a9bef5') in 0.061381 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Props/Scripts/Rendering 6/TangentSpaceVisualizer.cs
+  artifactKey: Guid(2cb7aa096d3cd254dbe0203949687f5a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Scripts/Rendering 6/TangentSpaceVisualizer.cs using Guid(2cb7aa096d3cd254dbe0203949687f5a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cddeae9150975a8e79210191cade7ccc') in 0.017213 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Props/Materials/Rendering 10/Circuitry 2.mat
+  artifactKey: Guid(aa37adb3705824442a55403ee50daf49) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Materials/Rendering 10/Circuitry 2.mat using Guid(aa37adb3705824442a55403ee50daf49) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '75c544a129a9524aa1a1aa59a57de599') in 0.095238 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Props/Textures/9-10/circuitry-detail-albedo.png
+  artifactKey: Guid(f47611eb57b6dd841a512fbcddf477c9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Textures/9-10/circuitry-detail-albedo.png using Guid(f47611eb57b6dd841a512fbcddf477c9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '785e7f4bfb3f34ea79ea8338b317411e') in 0.045794 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000014 seconds.
-  path: Assets/Scenes/8/ReflectionProbe-3.exr
-  artifactKey: Guid(45ea998e916dfd3418385f2eabf22e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/8/ReflectionProbe-3.exr using Guid(45ea998e916dfd3418385f2eabf22e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bf03ba4ae789e78810e94ca977157f8') in 0.030558 seconds
+  path: Assets/Settings/URP-Balanced-Renderer.asset
+  artifactKey: Guid(e634585d5c4544dd297acaee93dc2beb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Settings/URP-Balanced-Renderer.asset using Guid(e634585d5c4544dd297acaee93dc2beb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'dd8755f80f626916457eae20bf08217f') in 0.033920 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Props/Scripts/Rendering 9/My Shadows 3.cginc
+  artifactKey: Guid(a68669970d069da4487849c87611588f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Scripts/Rendering 9/My Shadows 3.cginc using Guid(a68669970d069da4487849c87611588f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '32e0ece0b3cd71c0da7ca8e6aae778e8') in 0.015443 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Props/Scripts/Rendering 2/MyFirstShader.shader
+  artifactKey: Guid(25b452aee48901d41871700a1c9c3682) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Scripts/Rendering 2/MyFirstShader.shader using Guid(25b452aee48901d41871700a1c9c3682) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bd356828317559e5b115314db6106b97') in 0.017419 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Props/Textures/9-10/circuitry-occlusion.png
+  artifactKey: Guid(32241406f4d506441a8ffc0704e4f7e3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Textures/9-10/circuitry-occlusion.png using Guid(32241406f4d506441a8ffc0704e4f7e3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '34a4c7c5f212129d4dd45d262673085d') in 0.074360 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Props/Scripts/Rendering 8/My Shadows 2.cginc
+  artifactKey: Guid(0c32fd54a02a8964b894879fd02deb5a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Scripts/Rendering 8/My Shadows 2.cginc using Guid(0c32fd54a02a8964b894879fd02deb5a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '34a2969e5b2412b59f025079acc99408') in 0.066979 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Props/Textures/11/transparency.png
+  artifactKey: Guid(c235928c0997a9848b09ca62fd146cb9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Textures/11/transparency.png using Guid(c235928c0997a9848b09ca62fd146cb9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b6d6e3dddaf7eef6f81757f8941433c8') in 0.027121 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/Settings/URP-HighFidelity-Renderer.asset
+  artifactKey: Guid(c40be3174f62c4acf8c1216858c64956) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Settings/URP-HighFidelity-Renderer.asset using Guid(c40be3174f62c4acf8c1216858c64956) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8cd25b24f6d59bb5b96ef3e77b8bdd44') in 0.048661 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Props/Scripts/Rendering 12/Semitransparent Shadows.shader
+  artifactKey: Guid(587b44619df80284a8a039f1271dfefc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Scripts/Rendering 12/Semitransparent Shadows.shader using Guid(587b44619df80284a8a039f1271dfefc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5dedc3a97bde96a8298b06ddd15f4dc1') in 0.020904 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Props/Materials/Rendering 4/Light Material.mat
+  artifactKey: Guid(b8f464e29d104954582b9f9f31dc560c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Materials/Rendering 4/Light Material.mat using Guid(b8f464e29d104954582b9f9f31dc560c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Material 'Light Material' with Shader '_MyShaders/_CatlikeCoding/05)MultipleLighting' doesn't have a color property '_Color'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\Material.cpp line 1509]
+
+Material 'Light Material' with Shader '_MyShaders/_CatlikeCoding/05)MultipleLighting' doesn't have a float or range property '_Cutoff'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\Material.cpp line 1593]
+
+Material 'Light Material' with Shader '_MyShaders/_CatlikeCoding/05)MultipleLighting' doesn't have a float or range property '_Glossiness'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\Material.cpp line 1593]
+
+Material 'Light Material' with Shader '_MyShaders/_CatlikeCoding/05)MultipleLighting' doesn't have a float or range property '_GlossMapScale'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\Material.cpp line 1593]
+
+Material 'Light Material' with Shader '_MyShaders/_CatlikeCoding/05)MultipleLighting' doesn't have a float or range property '_SmoothnessTextureChannel'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\Material.cpp line 1593]
+
+Material 'Light Material' with Shader '_MyShaders/_CatlikeCoding/05)MultipleLighting' doesn't have a float or range property '_SpecularHighlights'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\Material.cpp line 1593]
+
+Material 'Light Material' with Shader '_MyShaders/_CatlikeCoding/05)MultipleLighting' doesn't have a float or range property '_GlossyReflections'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\Material.cpp line 1593]
+
+Material 'Light Material' with Shader '_MyShaders/_CatlikeCoding/05)MultipleLighting' doesn't have a float or range property '_BumpScale'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\Material.cpp line 1593]
+
+Material 'Light Material' with Shader '_MyShaders/_CatlikeCoding/05)MultipleLighting' doesn't have a float or range property '_Parallax'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\Material.cpp line 1593]
+
+Material 'Light Material' with Shader '_MyShaders/_CatlikeCoding/05)MultipleLighting' doesn't have a float or range property '_OcclusionStrength'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\Material.cpp line 1593]
+
+Material 'Light Material' with Shader '_MyShaders/_CatlikeCoding/05)MultipleLighting' doesn't have a color property '_EmissionColor'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\Material.cpp line 1509]
+
+Material 'Light Material' with Shader '_MyShaders/_CatlikeCoding/05)MultipleLighting' doesn't have a float or range property '_DetailNormalMapScale'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\Material.cpp line 1593]
+
+Material 'Light Material' with Shader '_MyShaders/_CatlikeCoding/05)MultipleLighting' doesn't have a float or range property '_UVSec'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\Material.cpp line 1593]
+
+Material 'Light Material' with Shader '_MyShaders/_CatlikeCoding/05)MultipleLighting' doesn't have a float or range property '_Mode'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\Material.cpp line 1593]
+
+Material 'Light Material' with Shader '_MyShaders/_CatlikeCoding/05)MultipleLighting' doesn't have a float or range property '_SrcBlend'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\Material.cpp line 1593]
+
+Material 'Light Material' with Shader '_MyShaders/_CatlikeCoding/05)MultipleLighting' doesn't have a float or range property '_DstBlend'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\Material.cpp line 1593]
+
+Material 'Light Material' with Shader '_MyShaders/_CatlikeCoding/05)MultipleLighting' doesn't have a float or range property '_ZWrite'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\Material.cpp line 1593]
+
+Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c33a23f4036703901392575b94c7b081') in 0.053346 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Props/Textures/9-10/circuitry-albedo.png
+  artifactKey: Guid(83ffeae43b7e99241b32b2b87cde8ee7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Textures/9-10/circuitry-albedo.png using Guid(83ffeae43b7e99241b32b2b87cde8ee7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5ced74aef4c6dd9f6a68391be1a69e5b') in 0.027021 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Props/Scripts/Rendering 8/MoveBetweenPoints.cs
+  artifactKey: Guid(9ff448191b891444c8164bb62217bfb3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Scripts/Rendering 8/MoveBetweenPoints.cs using Guid(9ff448191b891444c8164bb62217bfb3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1e3fcaeaa960e742704312392ce49b41') in 0.025687 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Props/Materials/Rendering 2/SphereMat.mat
+  artifactKey: Guid(024c561f1cd8e7a4ca758938cede332d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Materials/Rendering 2/SphereMat.mat using Guid(024c561f1cd8e7a4ca758938cede332d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6e84cf884d8f944b98b2773e94953032') in 0.023950 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Props/Textures/0_Before 9/directional-cookie.png
+  artifactKey: Guid(4a4c332bd020ec44596d66c04cc443aa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Textures/0_Before 9/directional-cookie.png using Guid(4a4c332bd020ec44596d66c04cc443aa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8385c66cd79b5f8cc73fe651c158dbc7') in 0.078531 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Props/Textures/0_Before 9/marble-detail-normals.png
+  artifactKey: Guid(5e934fe285a646d498f89b2020ba915d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Textures/0_Before 9/marble-detail-normals.png using Guid(5e934fe285a646d498f89b2020ba915d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c6978fd6630c78071a12ab509a7022d5') in 0.111834 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Props/Textures/9-10/circuitry-metallic-smoothness.png
+  artifactKey: Guid(7948fe375dc68d2419389609279cac73) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Textures/9-10/circuitry-metallic-smoothness.png using Guid(7948fe375dc68d2419389609279cac73) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1fdbf89e3536524625c4e20718afc600') in 0.032357 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/Props/Textures/0_Before 9/texture.png
+  artifactKey: Guid(1384f615e06cbb546a87dbbd77683fa6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Textures/0_Before 9/texture.png using Guid(1384f615e06cbb546a87dbbd77683fa6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '11c6ef60c53509b68fd16982bc5bd17d') in 0.028071 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000083 seconds.
-  path: Assets/Props/Textures/0_Before 9/rgb-splat-map.png
-  artifactKey: Guid(3e29adbddbf622e47b1f80232e62f9fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Textures/0_Before 9/rgb-splat-map.png using Guid(3e29adbddbf622e47b1f80232e62f9fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9229302f3d36c86659228ac5a6c38b6c') in 0.017063 seconds
+  path: Assets/Props/Scripts/Rendering 1/RotationTransformation.cs
+  artifactKey: Guid(2c62f2883867eda418a845bb582ceb2c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Scripts/Rendering 1/RotationTransformation.cs using Guid(2c62f2883867eda418a845bb582ceb2c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3d4fabe862137b11718ca019e0e04027') in 0.075802 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Props/Textures/0_Before 9/spotlight-cookie.png
-  artifactKey: Guid(adca0aeb73c07db4a9c0afbb74f651aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Textures/0_Before 9/spotlight-cookie.png using Guid(adca0aeb73c07db4a9c0afbb74f651aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebeea7cc577bc09eff91a6af72917f05') in 0.013870 seconds
+  Time since last request: 0.000015 seconds.
+  path: Assets/Props/Scripts/Rendering 1/PositionTransformation.cs
+  artifactKey: Guid(335fa18ec3bdff343915b597b5a164ad) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Props/Scripts/Rendering 1/PositionTransformation.cs using Guid(335fa18ec3bdff343915b597b5a164ad) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c9aa38f46f2e0a63a06d0ea74a7fede5') in 0.051263 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 604.017707 seconds.
-  path: Assets/Props/Materials/Rendering 12/Semitransparent Shadows Mat.mat
-  artifactKey: Guid(4ccf4a1cd9a4ee746be8c2f3cc5de419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Materials/Rendering 12/Semitransparent Shadows Mat.mat using Guid(4ccf4a1cd9a4ee746be8c2f3cc5de419) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader error in '_MyShaders/_CatlikeCoding/12)Semitransparent Shadows': syntax error: unexpected end of file at Shadows.cginc(20) (on d3d11)
-
-Compiling Subshader: 0, Pass: <Unnamed Pass 2>, Vertex program with SHADOWS_DEPTH
-Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_SHADOWCASTER UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
-Disabled keywords: SHADER_API_GLES30 SHADOWS_CUBE UNITY_ASTC_NORMALMAP_ENCODING UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING _DETAIL_MASK
-Shader warning in '_MyShaders/_CatlikeCoding/12)Semitransparent Shadows': Ignoring duplicate keyword line 'shader_feature _DETAIL_MASK'
-Shader error in '_MyShaders/_CatlikeCoding/12)Semitransparent Shadows': syntax error: unexpected end of file at Shadows.cginc(20) (on d3d11)
-
-Compiling Subshader: 0, Pass: <Unnamed Pass 2>, Vertex program with SHADOWS_DEPTH
-Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_SHADOWCASTER UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
-Disabled keywords: SHADER_API_GLES30 SHADOWS_CUBE UNITY_ASTC_NORMALMAP_ENCODING UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING _DETAIL_MASK
-Shader warning in '_MyShaders/_CatlikeCoding/12)Semitransparent Shadows': Ignoring duplicate keyword line 'shader_feature _DETAIL_MASK'
- -> (artifact id: 'a6738be969a249d8973be357af5ec346') in 0.234990 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 820.080972 seconds.
-  path: Assets/Props/Materials/Rendering 12/Semitransparent Shadows Mat.mat
-  artifactKey: Guid(4ccf4a1cd9a4ee746be8c2f3cc5de419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Materials/Rendering 12/Semitransparent Shadows Mat.mat using Guid(4ccf4a1cd9a4ee746be8c2f3cc5de419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e00feb69e014171fa65f25fb0a075cc5') in 0.204184 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 1722.885010 seconds.
-  path: Assets/Props/Materials/Rendering 12/Semitransparent Shadows Mat.mat
-  artifactKey: Guid(4ccf4a1cd9a4ee746be8c2f3cc5de419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Materials/Rendering 12/Semitransparent Shadows Mat.mat using Guid(4ccf4a1cd9a4ee746be8c2f3cc5de419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd35498280f357556375c8f1dbdecea72') in 0.266733 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 80.965782 seconds.
-  path: Assets/Props/Materials/Rendering 12/Semitransparent Shadows Mat.mat
-  artifactKey: Guid(4ccf4a1cd9a4ee746be8c2f3cc5de419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Materials/Rendering 12/Semitransparent Shadows Mat.mat using Guid(4ccf4a1cd9a4ee746be8c2f3cc5de419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a27fcc9f01e9fd3e9edbe081afcfe91a') in 0.017398 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 2258.981738 seconds.
-  path: Assets/Props/Materials/Rendering 12/Semitransparent Shadows Mat.mat
-  artifactKey: Guid(4ccf4a1cd9a4ee746be8c2f3cc5de419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Materials/Rendering 12/Semitransparent Shadows Mat.mat using Guid(4ccf4a1cd9a4ee746be8c2f3cc5de419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ab515ea60d73c6f18a54461b7e2e214') in 0.150081 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 6.229141 seconds.
-  path: Assets/Props/Textures/12
-  artifactKey: Guid(ed93ada1a52a8014a8833151a8ea3f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Textures/12 using Guid(ed93ada1a52a8014a8833151a8ea3f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbbdf39cdc561e30d5f7e7504757d058') in 0.000760 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 8.889588 seconds.
-  path: Assets/Props/Textures/12/dither-patterns.png
-  artifactKey: Guid(d9e939107c739f14a85f34daafaa2526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Textures/12/dither-patterns.png using Guid(d9e939107c739f14a85f34daafaa2526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71fd0f1160977009da24fc9304b79561') in 0.398184 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1438.561427 seconds.
-  path: Assets/Props/Materials/Rendering 12/Semitransparent Shadows Mat.mat
-  artifactKey: Guid(4ccf4a1cd9a4ee746be8c2f3cc5de419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Materials/Rendering 12/Semitransparent Shadows Mat.mat using Guid(4ccf4a1cd9a4ee746be8c2f3cc5de419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '366c641de73dde255c0383cd0c2d0b4b') in 0.211813 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 203.784499 seconds.
-  path: Assets/Props/Materials/Rendering 12/Semitransparent Shadows Mat.mat
-  artifactKey: Guid(4ccf4a1cd9a4ee746be8c2f3cc5de419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Materials/Rendering 12/Semitransparent Shadows Mat.mat using Guid(4ccf4a1cd9a4ee746be8c2f3cc5de419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1e6a66a81b2967f583ed1db053cbe41') in 0.210280 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 36.613562 seconds.
-  path: Assets/Props/Materials/Rendering 12/Semitransparent Shadows Mat.mat
-  artifactKey: Guid(4ccf4a1cd9a4ee746be8c2f3cc5de419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Materials/Rendering 12/Semitransparent Shadows Mat.mat using Guid(4ccf4a1cd9a4ee746be8c2f3cc5de419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbf1ae3345c1eb3d9e7d8f42c71166c9') in 0.240570 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 1516.126331 seconds.
-  path: Assets/Props/Materials/Rendering 12/Semitransparent Shadows Mat.mat
-  artifactKey: Guid(4ccf4a1cd9a4ee746be8c2f3cc5de419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Materials/Rendering 12/Semitransparent Shadows Mat.mat using Guid(4ccf4a1cd9a4ee746be8c2f3cc5de419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aa4866104f236052b8b3f429e3b4db6') in 0.284784 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  3.275 seconds
-Refreshing native plugins compatible for Editor in 1.82 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.511 seconds
+Refreshing native plugins compatible for Editor in 2.38 ms, found 3 plugins.
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.795 seconds
-Domain Reload Profiling: 4070ms
-	BeginReloadAssembly (2605ms)
+- Finished resetting the current domain, in  0.777 seconds
+Domain Reload Profiling: 1287ms
+	BeginReloadAssembly (220ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (845ms)
+		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (722ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (160ms)
-	LoadAllAssembliesAndSetupDomain (459ms)
-		LoadAssemblies (577ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (24ms)
-			TypeCache.Refresh (10ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (8ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (795ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (376ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (20ms)
-			SetLoadedEditorAssemblies (6ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (87ms)
-			ProcessInitializeOnLoadAttributes (240ms)
-			ProcessInitializeOnLoadMethodAttributes (20ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Refreshing native plugins compatible for Editor in 1.71 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3068 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (30.5 KB). Loaded Objects now: 3606.
-Memory consumption went from 119.5 MB to 119.5 MB.
-Total: 2.912100 ms (FindLiveObjects: 0.236400 ms CreateObjectMapping: 0.209300 ms MarkObjects: 2.428600 ms  DeleteObjects: 0.037200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.874 seconds
-Refreshing native plugins compatible for Editor in 1.73 ms, found 3 plugins.
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.812 seconds
-Domain Reload Profiling: 1685ms
-	BeginReloadAssembly (494ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (310ms)
-	RebuildCommonClasses (55ms)
-	RebuildNativeTypeToScriptingClass (26ms)
-	initialDomainReloadingComplete (39ms)
-	LoadAllAssembliesAndSetupDomain (259ms)
-		LoadAssemblies (372ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (22ms)
-			TypeCache.Refresh (10ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (6ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (813ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (436ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (6ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (115ms)
-			ProcessInitializeOnLoadAttributes (287ms)
-			ProcessInitializeOnLoadMethodAttributes (19ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
-Refreshing native plugins compatible for Editor in 2.22 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3068 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (30.5 KB). Loaded Objects now: 3609.
-Memory consumption went from 119.3 MB to 119.3 MB.
-Total: 2.771500 ms (FindLiveObjects: 0.234700 ms CreateObjectMapping: 0.212200 ms MarkObjects: 2.285200 ms  DeleteObjects: 0.038400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.522 seconds
-Refreshing native plugins compatible for Editor in 2.17 ms, found 3 plugins.
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.815 seconds
-Domain Reload Profiling: 1337ms
-	BeginReloadAssembly (191ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (32ms)
-	RebuildCommonClasses (36ms)
-	RebuildNativeTypeToScriptingClass (13ms)
+		CreateAndSetChildDomain (80ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (11ms)
 	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (255ms)
-		LoadAssemblies (351ms)
+	LoadAllAssembliesAndSetupDomain (219ms)
+		LoadAssemblies (298ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (24ms)
-			TypeCache.Refresh (9ms)
+		AnalyzeDomain (17ms)
+			TypeCache.Refresh (7ms)
 				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (9ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (816ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (371ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (7ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (87ms)
-			ProcessInitializeOnLoadAttributes (248ms)
-			ProcessInitializeOnLoadMethodAttributes (21ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Refreshing native plugins compatible for Editor in 2.67 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3068 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (30.5 KB). Loaded Objects now: 3612.
-Memory consumption went from 119.3 MB to 119.3 MB.
-Total: 2.780700 ms (FindLiveObjects: 0.258400 ms CreateObjectMapping: 0.266400 ms MarkObjects: 2.214900 ms  DeleteObjects: 0.040200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.433 seconds
-Refreshing native plugins compatible for Editor in 1.73 ms, found 3 plugins.
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.741 seconds
-Domain Reload Profiling: 1174ms
-	BeginReloadAssembly (154ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (31ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (207ms)
-		LoadAssemblies (273ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (23ms)
-			TypeCache.Refresh (10ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (7ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (742ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (373ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (6ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (93ms)
-			ProcessInitializeOnLoadAttributes (247ms)
-			ProcessInitializeOnLoadMethodAttributes (19ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
-Refreshing native plugins compatible for Editor in 1.88 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3068 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (30.6 KB). Loaded Objects now: 3615.
-Memory consumption went from 119.3 MB to 119.3 MB.
-Total: 2.629300 ms (FindLiveObjects: 0.237700 ms CreateObjectMapping: 0.219800 ms MarkObjects: 2.127600 ms  DeleteObjects: 0.043300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.453 seconds
-Refreshing native plugins compatible for Editor in 1.74 ms, found 3 plugins.
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.759 seconds
-Domain Reload Profiling: 1212ms
-	BeginReloadAssembly (167ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (55ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (23ms)
-	LoadAllAssembliesAndSetupDomain (217ms)
-		LoadAssemblies (269ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (26ms)
-			TypeCache.Refresh (10ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (10ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (760ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (379ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (5ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (85ms)
-			ProcessInitializeOnLoadAttributes (258ms)
-			ProcessInitializeOnLoadMethodAttributes (22ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 1.87 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3068 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (30.6 KB). Loaded Objects now: 3618.
-Memory consumption went from 119.3 MB to 119.3 MB.
-Total: 2.867400 ms (FindLiveObjects: 0.260100 ms CreateObjectMapping: 0.241300 ms MarkObjects: 2.319600 ms  DeleteObjects: 0.045600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.430 seconds
-Refreshing native plugins compatible for Editor in 1.76 ms, found 3 plugins.
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.720 seconds
-Domain Reload Profiling: 1151ms
-	BeginReloadAssembly (150ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (30ms)
-	RebuildCommonClasses (41ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (25ms)
-	LoadAllAssembliesAndSetupDomain (201ms)
-		LoadAssemblies (267ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (20ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (6ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (721ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (349ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (5ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (84ms)
-			ProcessInitializeOnLoadAttributes (231ms)
-			ProcessInitializeOnLoadMethodAttributes (19ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-Refreshing native plugins compatible for Editor in 1.69 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3068 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (30.6 KB). Loaded Objects now: 3621.
-Memory consumption went from 119.3 MB to 119.3 MB.
-Total: 2.710300 ms (FindLiveObjects: 0.280600 ms CreateObjectMapping: 0.283400 ms MarkObjects: 2.106800 ms  DeleteObjects: 0.038700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.432 seconds
-Refreshing native plugins compatible for Editor in 2.52 ms, found 3 plugins.
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.789 seconds
-Domain Reload Profiling: 1221ms
-	BeginReloadAssembly (149ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (30ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (23ms)
-	LoadAllAssembliesAndSetupDomain (213ms)
-		LoadAssemblies (274ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (23ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (6ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (7ms)
-	FinalizeReload (789ms)
+	FinalizeReload (777ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (391ms)
+		SetupLoadedEditorAssemblies (360ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
+			InitializePlatformSupportModulesInManaged (7ms)
 			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (96ms)
-			ProcessInitializeOnLoadAttributes (258ms)
-			ProcessInitializeOnLoadMethodAttributes (21ms)
-			AfterProcessingInitializeOnLoad (3ms)
+			BeforeProcessingInitializeOnLoad (83ms)
+			ProcessInitializeOnLoadAttributes (239ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
+			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (14ms)
-Refreshing native plugins compatible for Editor in 1.82 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.01 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3068 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (30.6 KB). Loaded Objects now: 3624.
-Memory consumption went from 119.3 MB to 119.3 MB.
-Total: 3.458100 ms (FindLiveObjects: 0.241300 ms CreateObjectMapping: 0.225100 ms MarkObjects: 2.946400 ms  DeleteObjects: 0.044600 ms)
+Unloading 3067 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (29.6 KB). Loaded Objects now: 3562.
+Memory consumption went from 118.8 MB to 118.8 MB.
+Total: 3.019500 ms (FindLiveObjects: 0.238400 ms CreateObjectMapping: 0.213600 ms MarkObjects: 2.514400 ms  DeleteObjects: 0.052200 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -1094,3 +1008,265 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 75913.040445 seconds.
+  path: Assets/Props/Materials/Rendering 10/Lava 2.mat
+  artifactKey: Guid(4316fc520cd7792409593b1770aaa2d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Materials/Rendering 10/Lava 2.mat using Guid(4316fc520cd7792409593b1770aaa2d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4c3c0c32eb9881b0a9261b581ce6582') in 0.801206 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 484.111680 seconds.
+  path: Assets/Props/Materials/Rendering 11/Transparent Mat 1.mat
+  artifactKey: Guid(2d6eae1fe89381640b26035f946c5be9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Materials/Rendering 11/Transparent Mat 1.mat using Guid(2d6eae1fe89381640b26035f946c5be9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be1277736ec5d3629f6268be1282dbaa') in 0.031352 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 266.599092 seconds.
+  path: Assets/Props/Scripts/Rendering 13/My Shadows.cginc
+  artifactKey: Guid(b195c5d4e86dd144ca6330f036d8b238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Scripts/Rendering 13/My Shadows.cginc using Guid(b195c5d4e86dd144ca6330f036d8b238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a578a6294766c81589e99b3d093088f8') in 0.001342 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 2097.318604 seconds.
+  path: Assets/Props/Materials/Rendering 13/Lava 2.mat
+  artifactKey: Guid(98e482de49465874fbd4f42904c80625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Materials/Rendering 13/Lava 2.mat using Guid(98e482de49465874fbd4f42904c80625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7ef4a9ddecbf3c743442b62cba53e11') in 0.036332 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Props/Materials/Rendering 13/Semitransparent Shadows Mat 2.mat
+  artifactKey: Guid(9bc00fcc93e3e944893656b96e8c61b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Materials/Rendering 13/Semitransparent Shadows Mat 2.mat using Guid(9bc00fcc93e3e944893656b96e8c61b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42726fea4813113029d20d0854e1c7cf') in 0.227591 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 148.322622 seconds.
+  path: Assets/Props/Materials/Rendering 13/Lava 3.mat
+  artifactKey: Guid(98e482de49465874fbd4f42904c80625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Materials/Rendering 13/Lava 3.mat using Guid(98e482de49465874fbd4f42904c80625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3110ff658cb70d7affaa1674a771c2be') in 0.206171 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 258.786320 seconds.
+  path: Assets/Props/Materials/Rendering 13/Lava 3.mat
+  artifactKey: Guid(98e482de49465874fbd4f42904c80625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Materials/Rendering 13/Lava 3.mat using Guid(98e482de49465874fbd4f42904c80625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d2037c1f9ba8808975af32166025c39') in 0.222687 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Props/Materials/Rendering 13/Semitransparent Shadows Mat 2.mat
+  artifactKey: Guid(9bc00fcc93e3e944893656b96e8c61b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Materials/Rendering 13/Semitransparent Shadows Mat 2.mat using Guid(9bc00fcc93e3e944893656b96e8c61b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc32c312ad3681aac15f8bae0f74449a') in 0.195911 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 62588.617592 seconds.
+  path: Assets/Props/Materials/Rendering 13/Lava 3.mat
+  artifactKey: Guid(98e482de49465874fbd4f42904c80625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Materials/Rendering 13/Lava 3.mat using Guid(98e482de49465874fbd4f42904c80625) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader error in '_MyShaders/_CatlikeCoding/13)Defered Rendering': cannot convert from 'struct FragmentOutput' to 'half4' at Lighting.cginc(358) (on d3d11)
+
+Compiling Subshader: 0, Pass: Forward Base Pass, Vertex program with _EMISSION_MAP _NORMAL_MAP _SMOOTHNESS_ALBEDO
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_FORWARDBASE UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 SHADOWS_SCREEN UNITY_ASTC_NORMALMAP_ENCODING UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON _DETAIL_ALBEDO_MAP _DETAIL_MASK _DETAIL_NORMAL_MAP _METALLIC_MAP _OCCLUSION_MAP _RENDERING_CUTOUT _RENDERING_FADE _RENDERING_TRANSPARENT _SMOOTHNESS_METALLIC
+Shader warning in '_MyShaders/_CatlikeCoding/13)Defered Rendering': Ignoring duplicate keyword line 'shader_feature _DETAIL_MASK'
+Shader error in '_MyShaders/_CatlikeCoding/13)Defered Rendering': cannot convert from 'struct FragmentOutput' to 'half4' at Lighting.cginc(358) (on d3d11)
+
+Compiling Subshader: 0, Pass: Forward Base Pass, Vertex program with _EMISSION_MAP _NORMAL_MAP _SMOOTHNESS_ALBEDO
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_FORWARDBASE UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 SHADOWS_SCREEN UNITY_ASTC_NORMALMAP_ENCODING UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON _DETAIL_ALBEDO_MAP _DETAIL_MASK _DETAIL_NORMAL_MAP _METALLIC_MAP _OCCLUSION_MAP _RENDERING_CUTOUT _RENDERING_FADE _RENDERING_TRANSPARENT _SMOOTHNESS_METALLIC
+Shader warning in '_MyShaders/_CatlikeCoding/13)Defered Rendering': Ignoring duplicate keyword line 'shader_feature _DETAIL_MASK'
+Shader error in '_MyShaders/_CatlikeCoding/13)Defered Rendering': cannot convert from 'struct FragmentOutput' to 'half4' at Lighting.cginc(358) (on d3d11)
+
+Compiling Subshader: 0, Pass: Forward Base Pass, Vertex program with _EMISSION_MAP _NORMAL_MAP _SMOOTHNESS_ALBEDO
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_FORWARDBASE UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 SHADOWS_SCREEN UNITY_ASTC_NORMALMAP_ENCODING UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON _DETAIL_ALBEDO_MAP _DETAIL_MASK _DETAIL_NORMAL_MAP _METALLIC_MAP _OCCLUSION_MAP _RENDERING_CUTOUT _RENDERING_FADE _RENDERING_TRANSPARENT _SMOOTHNESS_METALLIC
+Shader warning in '_MyShaders/_CatlikeCoding/13)Defered Rendering': Ignoring duplicate keyword line 'shader_feature _DETAIL_MASK'
+Shader error in '_MyShaders/_CatlikeCoding/13)Defered Rendering': cannot convert from 'struct FragmentOutput' to 'half4' at Lighting.cginc(358) (on d3d11)
+
+Compiling Subshader: 0, Pass: Forward Base Pass, Vertex program with _EMISSION_MAP _NORMAL_MAP _SMOOTHNESS_ALBEDO
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_FORWARDBASE UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 SHADOWS_SCREEN UNITY_ASTC_NORMALMAP_ENCODING UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON _DETAIL_ALBEDO_MAP _DETAIL_MASK _DETAIL_NORMAL_MAP _METALLIC_MAP _OCCLUSION_MAP _RENDERING_CUTOUT _RENDERING_FADE _RENDERING_TRANSPARENT _SMOOTHNESS_METALLIC
+Shader warning in '_MyShaders/_CatlikeCoding/13)Defered Rendering': Ignoring duplicate keyword line 'shader_feature _DETAIL_MASK'
+ -> (artifact id: 'f91f106920fff7a57448ffe984be41a0') in 0.144851 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Props/Materials/Rendering 13/Semitransparent Shadows Mat 2.mat
+  artifactKey: Guid(9bc00fcc93e3e944893656b96e8c61b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Materials/Rendering 13/Semitransparent Shadows Mat 2.mat using Guid(9bc00fcc93e3e944893656b96e8c61b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader error in '_MyShaders/_CatlikeCoding/13)Defered Rendering': cannot convert from 'struct FragmentOutput' to 'half4' at Lighting.cginc(358) (on d3d11)
+
+Compiling Subshader: 0, Pass: Forward Base Pass, Vertex program with _RENDERING_TRANSPARENT
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_FORWARDBASE UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 SHADOWS_SCREEN UNITY_ASTC_NORMALMAP_ENCODING UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON _DETAIL_ALBEDO_MAP _DETAIL_MASK _DETAIL_NORMAL_MAP _EMISSION_MAP _METALLIC_MAP _NORMAL_MAP _OCCLUSION_MAP _RENDERING_CUTOUT _RENDERING_FADE _SMOOTHNESS_ALBEDO _SMOOTHNESS_METALLIC
+Shader warning in '_MyShaders/_CatlikeCoding/13)Defered Rendering': Ignoring duplicate keyword line 'shader_feature _DETAIL_MASK'
+Shader error in '_MyShaders/_CatlikeCoding/13)Defered Rendering': cannot convert from 'struct FragmentOutput' to 'half4' at Lighting.cginc(358) (on d3d11)
+
+Compiling Subshader: 0, Pass: Forward Base Pass, Vertex program with _RENDERING_TRANSPARENT
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_FORWARDBASE UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 SHADOWS_SCREEN UNITY_ASTC_NORMALMAP_ENCODING UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON _DETAIL_ALBEDO_MAP _DETAIL_MASK _DETAIL_NORMAL_MAP _EMISSION_MAP _METALLIC_MAP _NORMAL_MAP _OCCLUSION_MAP _RENDERING_CUTOUT _RENDERING_FADE _SMOOTHNESS_ALBEDO _SMOOTHNESS_METALLIC
+Shader warning in '_MyShaders/_CatlikeCoding/13)Defered Rendering': Ignoring duplicate keyword line 'shader_feature _DETAIL_MASK'
+Shader error in '_MyShaders/_CatlikeCoding/13)Defered Rendering': cannot convert from 'struct FragmentOutput' to 'half4' at Lighting.cginc(358) (on d3d11)
+
+Compiling Subshader: 0, Pass: Forward Base Pass, Vertex program with _RENDERING_TRANSPARENT
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_FORWARDBASE UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 SHADOWS_SCREEN UNITY_ASTC_NORMALMAP_ENCODING UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON _DETAIL_ALBEDO_MAP _DETAIL_MASK _DETAIL_NORMAL_MAP _EMISSION_MAP _METALLIC_MAP _NORMAL_MAP _OCCLUSION_MAP _RENDERING_CUTOUT _RENDERING_FADE _SMOOTHNESS_ALBEDO _SMOOTHNESS_METALLIC
+Shader warning in '_MyShaders/_CatlikeCoding/13)Defered Rendering': Ignoring duplicate keyword line 'shader_feature _DETAIL_MASK'
+Shader error in '_MyShaders/_CatlikeCoding/13)Defered Rendering': cannot convert from 'struct FragmentOutput' to 'half4' at Lighting.cginc(358) (on d3d11)
+
+Compiling Subshader: 0, Pass: Forward Base Pass, Vertex program with _RENDERING_TRANSPARENT
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_FORWARDBASE UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 SHADOWS_SCREEN UNITY_ASTC_NORMALMAP_ENCODING UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON _DETAIL_ALBEDO_MAP _DETAIL_MASK _DETAIL_NORMAL_MAP _EMISSION_MAP _METALLIC_MAP _NORMAL_MAP _OCCLUSION_MAP _RENDERING_CUTOUT _RENDERING_FADE _SMOOTHNESS_ALBEDO _SMOOTHNESS_METALLIC
+Shader warning in '_MyShaders/_CatlikeCoding/13)Defered Rendering': Ignoring duplicate keyword line 'shader_feature _DETAIL_MASK'
+ -> (artifact id: 'dfe29db7c6306cb298500c3890668a72') in 0.070223 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 383.980077 seconds.
+  path: Assets/Props/Materials/Rendering 13/Lava 3.mat
+  artifactKey: Guid(98e482de49465874fbd4f42904c80625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Materials/Rendering 13/Lava 3.mat using Guid(98e482de49465874fbd4f42904c80625) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader error in '_MyShaders/_CatlikeCoding/13)Defered Rendering': cannot convert from 'struct FragmentOutput' to 'half4' at Lighting.cginc(359) (on d3d11)
+
+Compiling Subshader: 0, Pass: Forward Base Pass, Vertex program with _EMISSION_MAP _NORMAL_MAP _SMOOTHNESS_ALBEDO
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_FORWARDBASE UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 SHADOWS_SCREEN UNITY_ASTC_NORMALMAP_ENCODING UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON _DETAIL_ALBEDO_MAP _DETAIL_MASK _DETAIL_NORMAL_MAP _METALLIC_MAP _OCCLUSION_MAP _RENDERING_CUTOUT _RENDERING_FADE _RENDERING_TRANSPARENT _SMOOTHNESS_METALLIC
+Shader warning in '_MyShaders/_CatlikeCoding/13)Defered Rendering': Ignoring duplicate keyword line 'shader_feature _DETAIL_MASK'
+Shader error in '_MyShaders/_CatlikeCoding/13)Defered Rendering': cannot convert from 'struct FragmentOutput' to 'half4' at Lighting.cginc(359) (on d3d11)
+
+Compiling Subshader: 0, Pass: Forward Base Pass, Vertex program with _EMISSION_MAP _NORMAL_MAP _SMOOTHNESS_ALBEDO
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_FORWARDBASE UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 SHADOWS_SCREEN UNITY_ASTC_NORMALMAP_ENCODING UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON _DETAIL_ALBEDO_MAP _DETAIL_MASK _DETAIL_NORMAL_MAP _METALLIC_MAP _OCCLUSION_MAP _RENDERING_CUTOUT _RENDERING_FADE _RENDERING_TRANSPARENT _SMOOTHNESS_METALLIC
+Shader warning in '_MyShaders/_CatlikeCoding/13)Defered Rendering': Ignoring duplicate keyword line 'shader_feature _DETAIL_MASK'
+Shader error in '_MyShaders/_CatlikeCoding/13)Defered Rendering': cannot convert from 'struct FragmentOutput' to 'half4' at Lighting.cginc(359) (on d3d11)
+
+Compiling Subshader: 0, Pass: Forward Base Pass, Vertex program with _EMISSION_MAP _NORMAL_MAP _SMOOTHNESS_ALBEDO
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_FORWARDBASE UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 SHADOWS_SCREEN UNITY_ASTC_NORMALMAP_ENCODING UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON _DETAIL_ALBEDO_MAP _DETAIL_MASK _DETAIL_NORMAL_MAP _METALLIC_MAP _OCCLUSION_MAP _RENDERING_CUTOUT _RENDERING_FADE _RENDERING_TRANSPARENT _SMOOTHNESS_METALLIC
+Shader warning in '_MyShaders/_CatlikeCoding/13)Defered Rendering': Ignoring duplicate keyword line 'shader_feature _DETAIL_MASK'
+Shader error in '_MyShaders/_CatlikeCoding/13)Defered Rendering': cannot convert from 'struct FragmentOutput' to 'half4' at Lighting.cginc(359) (on d3d11)
+
+Compiling Subshader: 0, Pass: Forward Base Pass, Vertex program with _EMISSION_MAP _NORMAL_MAP _SMOOTHNESS_ALBEDO
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_FORWARDBASE UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 SHADOWS_SCREEN UNITY_ASTC_NORMALMAP_ENCODING UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON _DETAIL_ALBEDO_MAP _DETAIL_MASK _DETAIL_NORMAL_MAP _METALLIC_MAP _OCCLUSION_MAP _RENDERING_CUTOUT _RENDERING_FADE _RENDERING_TRANSPARENT _SMOOTHNESS_METALLIC
+Shader warning in '_MyShaders/_CatlikeCoding/13)Defered Rendering': Ignoring duplicate keyword line 'shader_feature _DETAIL_MASK'
+ -> (artifact id: '85e998319ef4b120013eefb020666895') in 0.071699 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Props/Materials/Rendering 13/Semitransparent Shadows Mat 2.mat
+  artifactKey: Guid(9bc00fcc93e3e944893656b96e8c61b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Materials/Rendering 13/Semitransparent Shadows Mat 2.mat using Guid(9bc00fcc93e3e944893656b96e8c61b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader error in '_MyShaders/_CatlikeCoding/13)Defered Rendering': cannot convert from 'struct FragmentOutput' to 'half4' at Lighting.cginc(359) (on d3d11)
+
+Compiling Subshader: 0, Pass: Forward Base Pass, Vertex program with _RENDERING_TRANSPARENT
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_FORWARDBASE UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 SHADOWS_SCREEN UNITY_ASTC_NORMALMAP_ENCODING UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON _DETAIL_ALBEDO_MAP _DETAIL_MASK _DETAIL_NORMAL_MAP _EMISSION_MAP _METALLIC_MAP _NORMAL_MAP _OCCLUSION_MAP _RENDERING_CUTOUT _RENDERING_FADE _SMOOTHNESS_ALBEDO _SMOOTHNESS_METALLIC
+Shader warning in '_MyShaders/_CatlikeCoding/13)Defered Rendering': Ignoring duplicate keyword line 'shader_feature _DETAIL_MASK'
+Shader error in '_MyShaders/_CatlikeCoding/13)Defered Rendering': cannot convert from 'struct FragmentOutput' to 'half4' at Lighting.cginc(359) (on d3d11)
+
+Compiling Subshader: 0, Pass: Forward Base Pass, Vertex program with _RENDERING_TRANSPARENT
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_FORWARDBASE UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 SHADOWS_SCREEN UNITY_ASTC_NORMALMAP_ENCODING UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON _DETAIL_ALBEDO_MAP _DETAIL_MASK _DETAIL_NORMAL_MAP _EMISSION_MAP _METALLIC_MAP _NORMAL_MAP _OCCLUSION_MAP _RENDERING_CUTOUT _RENDERING_FADE _SMOOTHNESS_ALBEDO _SMOOTHNESS_METALLIC
+Shader warning in '_MyShaders/_CatlikeCoding/13)Defered Rendering': Ignoring duplicate keyword line 'shader_feature _DETAIL_MASK'
+Shader error in '_MyShaders/_CatlikeCoding/13)Defered Rendering': cannot convert from 'struct FragmentOutput' to 'half4' at Lighting.cginc(359) (on d3d11)
+
+Compiling Subshader: 0, Pass: Forward Base Pass, Vertex program with _RENDERING_TRANSPARENT
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_FORWARDBASE UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 SHADOWS_SCREEN UNITY_ASTC_NORMALMAP_ENCODING UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON _DETAIL_ALBEDO_MAP _DETAIL_MASK _DETAIL_NORMAL_MAP _EMISSION_MAP _METALLIC_MAP _NORMAL_MAP _OCCLUSION_MAP _RENDERING_CUTOUT _RENDERING_FADE _SMOOTHNESS_ALBEDO _SMOOTHNESS_METALLIC
+Shader warning in '_MyShaders/_CatlikeCoding/13)Defered Rendering': Ignoring duplicate keyword line 'shader_feature _DETAIL_MASK'
+Shader error in '_MyShaders/_CatlikeCoding/13)Defered Rendering': cannot convert from 'struct FragmentOutput' to 'half4' at Lighting.cginc(359) (on d3d11)
+
+Compiling Subshader: 0, Pass: Forward Base Pass, Vertex program with _RENDERING_TRANSPARENT
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_FORWARDBASE UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 SHADOWS_SCREEN UNITY_ASTC_NORMALMAP_ENCODING UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON _DETAIL_ALBEDO_MAP _DETAIL_MASK _DETAIL_NORMAL_MAP _EMISSION_MAP _METALLIC_MAP _NORMAL_MAP _OCCLUSION_MAP _RENDERING_CUTOUT _RENDERING_FADE _SMOOTHNESS_ALBEDO _SMOOTHNESS_METALLIC
+Shader warning in '_MyShaders/_CatlikeCoding/13)Defered Rendering': Ignoring duplicate keyword line 'shader_feature _DETAIL_MASK'
+ -> (artifact id: '8756094a68ecfec09740b2ec8adb4891') in 0.049957 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1016.984712 seconds.
+  path: Assets/Props/Materials/Rendering 13/Lava 3.mat
+  artifactKey: Guid(98e482de49465874fbd4f42904c80625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Materials/Rendering 13/Lava 3.mat using Guid(98e482de49465874fbd4f42904c80625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '852a10a7ba1d178ed48a1216d5893da9') in 0.188872 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 2414.534014 seconds.
+  path: Assets/Props/Materials/Rendering 13/Lava 3.mat
+  artifactKey: Guid(98e482de49465874fbd4f42904c80625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Materials/Rendering 13/Lava 3.mat using Guid(98e482de49465874fbd4f42904c80625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '227b2fdfa8e8a4e0a8d7d91abc91758a') in 0.239795 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Props/Materials/Rendering 13/Semitransparent Shadows Mat 2.mat
+  artifactKey: Guid(9bc00fcc93e3e944893656b96e8c61b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Materials/Rendering 13/Semitransparent Shadows Mat 2.mat using Guid(9bc00fcc93e3e944893656b96e8c61b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dcec02da9c043a561a06e19d1be167e') in 0.168378 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 332.064060 seconds.
+  path: Assets/Scenes/13/ReflectionProbe-1.exr
+  artifactKey: Guid(a14fd85bab980374096e1f841f94410f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/13/ReflectionProbe-1.exr using Guid(a14fd85bab980374096e1f841f94410f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a94514a3b7a03386cd285588d2446e52') in 0.182552 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scenes/13/ReflectionProbe-2.exr
+  artifactKey: Guid(de56d0f66ee1b41478e5cc1b902a292d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/13/ReflectionProbe-2.exr using Guid(de56d0f66ee1b41478e5cc1b902a292d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2155202802886d29f27712f07a3514f') in 0.170949 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 19.533104 seconds.
+  path: Assets/Scenes/13/Lightmap-0_comp_dir.png
+  artifactKey: Guid(da5f803b1feafea46b60dc9a9591c162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/13/Lightmap-0_comp_dir.png using Guid(da5f803b1feafea46b60dc9a9591c162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f61affdbe5a4ad1cd333f84354c23189') in 0.038390 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.059050 seconds.
+  path: Assets/Scenes/13/Lightmap-1_comp_light.exr
+  artifactKey: Guid(2195b65eced9a6a4687eae21750364b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/13/Lightmap-1_comp_light.exr using Guid(2195b65eced9a6a4687eae21750364b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da29f597476a9655a9f65b4bac90d039') in 0.322340 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scenes/13/Lightmap-1_comp_dir.png
+  artifactKey: Guid(5bbf4bfbfe180d74db44ab7b097a9603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/13/Lightmap-1_comp_dir.png using Guid(5bbf4bfbfe180d74db44ab7b097a9603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fadaf98c51c3e273920da8b6755356d5') in 0.016617 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
