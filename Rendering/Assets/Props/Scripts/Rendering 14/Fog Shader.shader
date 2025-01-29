@@ -39,7 +39,7 @@ Shader "_MyShaders/_CatlikeCoding/14)Fog"
 	#pragma target 3.0
 
 	#define BINORMAL_PER_FRAGMENT
-	//#define FOG_DISTANCE
+    //#define FOG_DISTANCE
 
 	ENDCG
 
