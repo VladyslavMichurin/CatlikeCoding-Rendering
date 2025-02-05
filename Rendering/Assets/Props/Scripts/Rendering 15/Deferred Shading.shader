@@ -7,8 +7,7 @@ Shader "_MyShaders/_CatlikeCoding/15.1)Deferred Shading"
 
 		Pass 
 		{
-			Cull Off
-			ZTest Always
+			Blend [_SrcBlend] [_DstBlend]
 			ZWrite Off
 			
 			CGPROGRAM
@@ -18,26 +17,11 @@ Shader "_MyShaders/_CatlikeCoding/15.1)Deferred Shading"
 			#pragma fragment FragmentProgram
 			
 			#pragma exclude_renderers nomrt
+
+			#pragma multi_compile_lightpass
+			#pragma multi_compile _ Time UNITY_HDR_ON
 			
-			#include "UnityCG.cginc"
-
-			struct VertexData {
-				float4 vertex : POSITION;
-			};
-
-			struct Interpolators {
-				float4 pos : SV_POSITION;
-			};
-
-			Interpolators VertexProgram (VertexData v) {
-				Interpolators i;
-				i.pos = UnityObjectToClipPos(v.vertex);
-				return i;
-			}
-
-			float4 FragmentProgram (Interpolators i) : SV_Target {
-				return 0;
-			}
+			#include "MyDeferredShading.cginc"
 
 			ENDCG
 		}
