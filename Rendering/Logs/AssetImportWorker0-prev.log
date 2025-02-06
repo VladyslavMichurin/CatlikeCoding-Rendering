@@ -15,7 +15,7 @@ D:/projects/Git/CatlikeCoding-Rendering/Rendering
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59967
+59680
 Successfully changed project path to: D:/projects/Git/CatlikeCoding-Rendering/Rendering
 D:/projects/Git/CatlikeCoding-Rendering/Rendering
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ D:/projects/Git/CatlikeCoding-Rendering/Rendering
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [18256] Host "[IP] 192.168.2.221 [Port] 0 [Flags] 2 [Guid] 3765571957 [EditorId] 3765571957 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J5TC0EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [33684] Host "[IP] 192.168.2.221 [Port] 0 [Flags] 2 [Guid] 4148170890 [EditorId] 4148170890 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J5TC0EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [18256] Host "[IP] 192.168.2.221 [Port] 0 [Flags] 2 [Guid] 3765571957 [EditorId] 3765571957 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J5TC0EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [33684] Host "[IP] 192.168.2.221 [Port] 0 [Flags] 2 [Guid] 4148170890 [EditorId] 4148170890 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J5TC0EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 8.21 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 5.62 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.7f1 (b16b3b16c7a0)
 [Subsystems] Discovering subsystems at path D:/programs/Unity Editors/2022.3.7f1/Editor/Data/Resources/UnitySubsystems
@@ -69,46 +69,46 @@ Initialize mono
 Mono path[0] = 'D:/programs/Unity Editors/2022.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'D:/programs/Unity Editors/2022.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/programs/Unity Editors/2022.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56168
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56492
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/programs/Unity Editors/2022.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: D:/programs/Unity Editors/2022.3.7f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.004520 seconds.
-- Loaded All Assemblies, in  0.334 seconds
+Registered in 0.004847 seconds.
+- Loaded All Assemblies, in  0.380 seconds
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.254 seconds
-Domain Reload Profiling: 588ms
-	BeginReloadAssembly (101ms)
+- Finished resetting the current domain, in  0.296 seconds
+Domain Reload Profiling: 676ms
+	BeginReloadAssembly (112ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (47ms)
-	LoadAllAssembliesAndSetupDomain (141ms)
-		LoadAssemblies (101ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (161ms)
+		LoadAssemblies (112ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (139ms)
-			TypeCache.Refresh (138ms)
-				TypeCache.ScanAssembly (125ms)
+		AnalyzeDomain (159ms)
+			TypeCache.Refresh (157ms)
+				TypeCache.ScanAssembly (139ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (255ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (297ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (195ms)
+		SetupLoadedEditorAssemblies (231ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (6ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (123ms)
-			ProcessInitializeOnLoadMethodAttributes (55ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (156ms)
+			ProcessInitializeOnLoadMethodAttributes (57ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -118,82 +118,53 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.602 seconds
-Refreshing native plugins compatible for Editor in 1.67 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.657 seconds
+Refreshing native plugins compatible for Editor in 2.10 ms, found 3 plugins.
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.606 seconds
-Domain Reload Profiling: 1208ms
-	BeginReloadAssembly (145ms)
+- Finished resetting the current domain, in  0.566 seconds
+Domain Reload Profiling: 1223ms
+	BeginReloadAssembly (160ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (20ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (35ms)
-	LoadAllAssembliesAndSetupDomain (378ms)
-		LoadAssemblies (294ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (400ms)
+		LoadAssemblies (299ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (170ms)
-			TypeCache.Refresh (150ms)
-				TypeCache.ScanAssembly (136ms)
+		AnalyzeDomain (190ms)
+			TypeCache.Refresh (169ms)
+				TypeCache.ScanAssembly (154ms)
 			ScanForSourceGeneratedMonoScriptInfo (14ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (607ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (566ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (443ms)
+		SetupLoadedEditorAssemblies (401ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (87ms)
-			ProcessInitializeOnLoadAttributes (316ms)
+			ProcessInitializeOnLoadAttributes (275ms)
 			ProcessInitializeOnLoadMethodAttributes (25ms)
-			AfterProcessingInitializeOnLoad (4ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.78 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.84 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3093 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (56.4 KB). Loaded Objects now: 3560.
-Memory consumption went from 120.1 MB to 120.0 MB.
-Total: 3.264200 ms (FindLiveObjects: 0.236900 ms CreateObjectMapping: 0.220400 ms MarkObjects: 2.689700 ms  DeleteObjects: 0.115800 ms)
+Unloading 31 unused Assets / (56.5 KB). Loaded Objects now: 3560.
+Memory consumption went from 120.1 MB to 120.1 MB.
+Total: 3.007900 ms (FindLiveObjects: 0.226900 ms CreateObjectMapping: 0.181700 ms MarkObjects: 2.505300 ms  DeleteObjects: 0.093100 ms)
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1596873.675920 seconds.
-  path: Assets/Props/Scripts/Rendering 15/Deferred Shading.shader
-  artifactKey: Guid(d40e00f5d1ea52f4f8a57a6342b4eabb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 15/Deferred Shading.shader using Guid(d40e00f5d1ea52f4f8a57a6342b4eabb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cee02783ad5cffe1e84852ac2f21b296') in 0.010146 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 1.78 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1 unused Assets / (0.8 KB). Loaded Objects now: 3561.
-Memory consumption went from 67.1 MB to 67.1 MB.
-Total: 3.426000 ms (FindLiveObjects: 0.244200 ms CreateObjectMapping: 0.213600 ms MarkObjects: 2.949000 ms  DeleteObjects: 0.018400 ms)
-
-Prepare: number of updated asset objects reloaded= 1
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -209,161 +180,185 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 309.154695 seconds.
+  Time since last request: 1621431.652004 seconds.
   path: Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc
   artifactKey: Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee50c559198ccd1f9513da9ce595fa3d') in 0.002102 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 190.240650 seconds.
-  path: Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc
-  artifactKey: Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26c8a3fc52eeeb766d737fb9c52571c7') in 0.001080 seconds
+Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54936003196133c3c24780eef2dfedbd') in 0.014909 seconds
 Number of updated asset objects reloaded before import = 1
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 31.630028 seconds.
+  Time since last request: 73.761379 seconds.
   path: Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc
   artifactKey: Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7c4d79ae88f38926d5af4cd824f4689') in 0.000832 seconds
+Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d315070664902439132abe00a3c5fae') in 0.001660 seconds
 Number of updated asset objects reloaded before import = 1
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 315.682045 seconds.
+  Time since last request: 46.115627 seconds.
   path: Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc
   artifactKey: Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6060c2722157771be9c454bc1a002ae') in 0.001020 seconds
+Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43412790a6585467eaf5755c10617d9c') in 0.000793 seconds
 Number of updated asset objects reloaded before import = 1
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 10.806199 seconds.
+  Time since last request: 156.029368 seconds.
   path: Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc
   artifactKey: Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '166f9a1df5c21b690fb982598e4447cf') in 0.000984 seconds
+Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf261c45154c07db0e6e6a9ef647070a') in 0.001191 seconds
 Number of updated asset objects reloaded before import = 1
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 424.782719 seconds.
+  Time since last request: 799.632789 seconds.
   path: Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc
   artifactKey: Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22e14fe6164421240212c7af744b8bd9') in 0.001141 seconds
+Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3459fdb0574d2d18dc31bfe3994cbd4') in 0.001146 seconds
 Number of updated asset objects reloaded before import = 1
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 55.368339 seconds.
-  path: Assets/Props/Scripts/Rendering 15/Deferred Shading.shader
-  artifactKey: Guid(d40e00f5d1ea52f4f8a57a6342b4eabb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 15/Deferred Shading.shader using Guid(d40e00f5d1ea52f4f8a57a6342b4eabb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30a8eb8f4282c6d3e2b718057e4aef50') in 0.000804 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 480.240188 seconds.
+  Time since last request: 1053.697077 seconds.
   path: Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc
   artifactKey: Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f61d373dda91ba4cce1b23067a5f0fd') in 0.000985 seconds
+Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63e5240bbaa48ca9829d0df3755b5ed0') in 0.001173 seconds
 Number of updated asset objects reloaded before import = 1
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 10.286166 seconds.
+  Time since last request: 47.121691 seconds.
   path: Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc
   artifactKey: Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5de8b207625c199f1371db3d87f2986') in 0.000848 seconds
+Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de45646d39f49168b5a463b03438f7c3') in 0.001074 seconds
 Number of updated asset objects reloaded before import = 1
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 3294.534611 seconds.
+  Time since last request: 311.131897 seconds.
   path: Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc
   artifactKey: Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd48148570819fa4a9e6fe6b7e387f7d9') in 0.001542 seconds
+Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d87bc5bb2b8736c0f6294da21d77b37') in 0.001415 seconds
 Number of updated asset objects reloaded before import = 1
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 145.954795 seconds.
+  Time since last request: 71.675032 seconds.
   path: Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc
   artifactKey: Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5254e83ce62c05dd94ce7f7fc709bc49') in 0.001499 seconds
+Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '906fe4db0bd053f6ddba7a3a3582e74b') in 0.001294 seconds
 Number of updated asset objects reloaded before import = 1
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 12.527363 seconds.
-  path: Assets/Scenes/13/ReflectionProbe-2.exr
-  artifactKey: Guid(de56d0f66ee1b41478e5cc1b902a292d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/13/ReflectionProbe-2.exr using Guid(de56d0f66ee1b41478e5cc1b902a292d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c259358505061074d883efed4ea7b59') in 0.388974 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 105.313801 seconds.
+  Time since last request: 188.967307 seconds.
   path: Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc
   artifactKey: Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '767cb7bc7d20e5247d48b5055a478545') in 0.001208 seconds
+Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f18f1434ac8e635e8aa27c269cf525c') in 0.001264 seconds
 Number of updated asset objects reloaded before import = 1
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 12.324884 seconds.
+  Time since last request: 146.166782 seconds.
   path: Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc
   artifactKey: Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b251f2cd58046c78f4db941fa4ffea76') in 0.000791 seconds
+Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b38b77bcd2679c94b5042f278a528d94') in 0.000982 seconds
 Number of updated asset objects reloaded before import = 1
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 6.528599 seconds.
+  Time since last request: 65.390160 seconds.
   path: Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc
   artifactKey: Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76843e0c4e9e8284e89a7ddd55403068') in 0.001055 seconds
+Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a97b77017a24f9bff5dc1fcfa26b201') in 0.000981 seconds
 Number of updated asset objects reloaded before import = 1
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 38.926924 seconds.
+  Time since last request: 2.817142 seconds.
   path: Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc
   artifactKey: Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf0009291b6cda21ce8bc061ea044f3c') in 0.000990 seconds
+Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3587d7956b5f56d53cb1775f5a78bef') in 0.000761 seconds
 Number of updated asset objects reloaded before import = 1
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 100.875593 seconds.
+  Time since last request: 13.834455 seconds.
   path: Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc
   artifactKey: Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86c3a1cf3d8bb12836b7d7c62618cb09') in 0.001017 seconds
+Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20124e740b818f151cc2b7b398e705f1') in 0.000920 seconds
 Number of updated asset objects reloaded before import = 1
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 3.380252 seconds.
+  Time since last request: 76.198780 seconds.
   path: Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc
   artifactKey: Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d518c467dd7764c1583bdccd9ab5260') in 0.000734 seconds
+Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c57c91510ffb50f6be5e31a6bc6c4267') in 0.000977 seconds
 Number of updated asset objects reloaded before import = 1
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 941.023022 seconds.
+  Time since last request: 440.256855 seconds.
   path: Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc
   artifactKey: Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa46e8cdec5c0614953b6baf6b92af77') in 0.001053 seconds
+Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c306d02b1660ab9e76e319a7c592c982') in 0.001113 seconds
 Number of updated asset objects reloaded before import = 1
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 10.475010 seconds.
+  Time since last request: 319.685321 seconds.
   path: Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc
   artifactKey: Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afc3aca3577cbd31fbfbd4ac87d7c58c') in 0.000734 seconds
+Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a00d2b3304e7cc978ede0e6d670b837f') in 0.001043 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 38.828994 seconds.
+  path: Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc
+  artifactKey: Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae9e530b8d8969b8a23615707a63f674') in 0.000951 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 37.705952 seconds.
+  path: Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc
+  artifactKey: Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0508a02b2777ed8a33b84ac4d2adaf3') in 0.000795 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 25.756076 seconds.
+  path: Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc
+  artifactKey: Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce9badf282180544a618fcea4c65553d') in 0.000820 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 44.427241 seconds.
+  path: Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc
+  artifactKey: Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7761c2c94eca9222f650a50810a5453') in 0.000963 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 554.983141 seconds.
+  path: Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc
+  artifactKey: Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a77e2ad1dff5c8a695fc45deed0e114') in 0.001162 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 866.681925 seconds.
+  path: Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc
+  artifactKey: Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Scripts/Rendering 15/MyDeferredShading.cginc using Guid(f7eabbff82383694781a57eca12afde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '488db90291dff28e6e9b42f6e8152eb8') in 0.001104 seconds
 Number of updated asset objects reloaded before import = 1
 Number of asset objects unloaded after import = 1
