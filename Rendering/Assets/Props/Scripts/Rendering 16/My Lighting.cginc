@@ -17,6 +17,7 @@ struct appdata
 	float3 normal : NORMAL;
 	float4 tangent : TANGENT;
 	float2 uv : TEXCOORD0;
+    float2 uv1 : TEXCOORD1;
 };
 struct Interpolators 
 {
@@ -43,6 +44,10 @@ struct Interpolators
 		float3 vertexLightColor : TEXCOORD6;
 	#endif
 
+    #if defined(LIGHTMAP_ON)
+		float2 lightmapUV : TEXCOORD6;
+	#endif
+
 };
 struct FragmentOutput 
 {
@@ -56,7 +61,7 @@ struct FragmentOutput
 	#endif
 };
 
-    float4 _Tint;
+    float4 _Color;
 
     sampler2D _MainTex, _DetailTex, _DetailMask;
     float4 _MainTex_ST, _DetailTex_ST;
@@ -75,7 +80,7 @@ struct FragmentOutput
     sampler2D _OcclusionMap;
     float _OcclusionStrenght;
 
-    float _AlphaCutoff;
+    float _Cutoff;
 
 float GetMetallic (Interpolators i) 
 {
@@ -129,7 +134,7 @@ float GetDetailMask(Interpolators i)
 }
 float GetAlpha(Interpolators i)
 {
-    float alpha = _Tint.a;
+    float alpha = _Color.a;
 
     #if !defined(_SMOOTHNESS_ALBEDO)
         
@@ -140,7 +145,7 @@ float GetAlpha(Interpolators i)
     return alpha;
 }
 float3 GetAlbedo (Interpolators i) {
-	float3 albedo = tex2D(_MainTex, i.uv.xy).rgb * _Tint.rgb;
+	float3 albedo = tex2D(_MainTex, i.uv.xy).rgb * _Color.rgb;
 	#if defined (_DETAIL_ALBEDO_MAP)
 		float3 details = tex2D(_DetailTex, i.uv.zw) * unity_ColorSpaceDouble;
 		albedo = lerp(albedo, albedo * details, GetDetailMask(i));
@@ -189,6 +194,10 @@ Interpolators MyVertexProgram (appdata v)
 		
 	i.uv.xy = TRANSFORM_TEX(v.uv, _MainTex);
 	i.uv.zw = TRANSFORM_TEX(v.uv, _DetailTex);
+
+    #if defined(LIGHTMAP_ON)
+		i.lightmapUV = v.uv1 * unity_LightmapST.xy + unity_LightmapST.zw;
+	#endif
 
     TRANSFER_SHADOW(i);
 
@@ -266,7 +275,19 @@ UnityIndirect CreateIndirectLight (Interpolators i, float3 viewDir)
 	#endif
 
     #if defined(FORWARD_BASE_PASS) || defined(DEFERRED_PASS)
-		indirectLight.diffuse += max(0, ShadeSH9(float4(i.normal, 1)));
+        #if defined(LIGHTMAP_ON)
+			indirectLight.diffuse = DecodeLightmap(UNITY_SAMPLE_TEX2D(unity_Lightmap, i.lightmapUV));
+
+            #if defined(DIRLIGHTMAP_COMBINED)
+                float4 lightmapDirection =
+                UNITY_SAMPLE_TEX2D_SAMPLER(unity_LightmapInd, unity_Lightmap, i.lightmapUV);
+                indirectLight.diffuse = 
+                DecodeDirectionalLightmap(indirectLight.diffuse, lightmapDirection, i.normal);         
+            #endif
+
+		#else
+		    indirectLight.diffuse += max(0, ShadeSH9(float4(i.normal, 1)));
+        #endif
 
         float3 reflectionDir = reflect(-viewDir, i.normal);
 
@@ -358,7 +379,7 @@ FragmentOutput MyFragmentProgram (Interpolators i) : SV_Target
     float alpha = GetAlpha(i);
 
     #if defined(_RENDERING_CUTOUT)
-        clip(alpha - _AlphaCutoff);
+        clip(alpha - _Cutoff);
     #endif
 
     InitializeFragmentNormal(i);

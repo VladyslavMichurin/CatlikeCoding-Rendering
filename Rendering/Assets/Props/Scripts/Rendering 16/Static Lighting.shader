@@ -2,7 +2,7 @@ Shader "_MyShaders/_CatlikeCoding/16)Static Lighting"
 {
     Properties
     {
-		_Tint ("Tint", Color) = (1, 1, 1, 1)
+		_Color ("Tint", Color) = (1, 1, 1, 1)
 		_MainTex ("Albedo", 2D) = "white" {}
 
         [NoScaleOffset] _NormalMap ("Normals", 2D) = "bump" {}
@@ -24,7 +24,7 @@ Shader "_MyShaders/_CatlikeCoding/16)Static Lighting"
 
 		[NoScaleOffset] _DetailMask ("Detail Mask", 2D) = "white" {}
 
-		_AlphaCutoff ("Alpha Cutoff", Range(0, 1)) = 0.5
+		_Cutoff ("Alpha Cutoff", Range(0, 1)) = 0.5
 
 		[HideInInspector] _SrcBlend ("_SrcBlend", Float) = 1
 		[HideInInspector] _DstBlend ("_DstBlend", Float) = 0
@@ -32,7 +32,7 @@ Shader "_MyShaders/_CatlikeCoding/16)Static Lighting"
 
     }
 
-	CustomEditor "MyCatlikeCodingShaderGUI"
+	CustomEditor "MyCatlikeCodingShaderGUI2"
 
     CGINCLUDE
 
@@ -61,8 +61,8 @@ Shader "_MyShaders/_CatlikeCoding/16)Static Lighting"
 			#pragma vertex MyVertexProgram
 			#pragma fragment MyFragmentProgram
 
-			#pragma multi_compile __ SHADOWS_SCREEN
-			#pragma multi_compile __ VERTEXLIGHT_ON
+			#pragma multi_compile_fwdbase
+			#pragma multi_compile_fog
 
 			#pragma shader_feature _ _RENDERING_CUTOUT _RENDERING_FADE _RENDERING_TRANSPARENT
 			#pragma shader_feature _METALLIC_MAP
@@ -73,8 +73,6 @@ Shader "_MyShaders/_CatlikeCoding/16)Static Lighting"
 			#pragma shader_feature _DETAIL_MASK
 			#pragma shader_feature _DETAIL_ALBEDO_MAP
 			#pragma shader_feature _DETAIL_NORMAL_MAP
-
-			#pragma multi_compile_fog
 
 			#define FORWARD_BASE_PASS
 
@@ -101,6 +99,7 @@ Shader "_MyShaders/_CatlikeCoding/16)Static Lighting"
 			#pragma fragment MyFragmentProgram
 
 			#pragma multi_compile_fwdadd_fullshadows
+			#pragma multi_compile_fog
 
 			#pragma shader_feature _ _RENDERING_CUTOUT _RENDERING_FADE _RENDERING_TRANSPARENT
 			#pragma shader_feature _METALLIC_MAP
@@ -109,8 +108,6 @@ Shader "_MyShaders/_CatlikeCoding/16)Static Lighting"
 			#pragma shader_feature _DETAIL_MASK
 			#pragma shader_feature _DETAIL_ALBEDO_MAP
 			#pragma shader_feature _DETAIL_NORMAL_MAP
-
-			#pragma multi_compile_fog
 
 			#include "My Lighting.cginc"
 
@@ -132,7 +129,7 @@ Shader "_MyShaders/_CatlikeCoding/16)Static Lighting"
 			#pragma fragment MyFragmentProgram
 
 			#pragma exclude_renderers nomrt
-			#pragma multi_compile _ UNITY_HDR_ON
+			#pragma multi_compile_prepassfinal
 
 			#pragma shader_feature _ _RENDERING_CUTOUT 
 			#pragma shader_feature _METALLIC_MAP
@@ -174,6 +171,32 @@ Shader "_MyShaders/_CatlikeCoding/16)Static Lighting"
 			#include "My Shadows.cginc"
 
 			ENDCG
+		}
+
+		Pass
+		{
+			Tags
+			{
+				"LightMode" = "Meta"
+			}
+
+			Cull Off
+
+			CGPROGRAM
+
+			#pragma vertex MyLightmappingVertexProgram
+			#pragma fragment MyLightmappingFragmentProgram
+
+			#pragma shader_feature _METALLIC_MAP
+			#pragma shader_feature _ _SMOOTHNESS_ALBEDO _SMOOTHNESS_METALLIC
+			#pragma shader_feature _EMISSION_MAP
+			#pragma shader_feature _DETAIL_MASK
+			#pragma shader_feature _DETAIL_ALBEDO_MAP
+
+			#include "My Lightmapping.cginc"
+
+			ENDCG
+
 		}
 
 	}
