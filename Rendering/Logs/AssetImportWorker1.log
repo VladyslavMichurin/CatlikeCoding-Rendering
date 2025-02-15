@@ -15,7 +15,7 @@ D:/projects/Git/CatlikeCoding-Rendering/Rendering
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-50769
+65044
 Successfully changed project path to: D:/projects/Git/CatlikeCoding-Rendering/Rendering
 D:/projects/Git/CatlikeCoding-Rendering/Rendering
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ D:/projects/Git/CatlikeCoding-Rendering/Rendering
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [13340] Host "[IP] 192.168.2.221 [Port] 0 [Flags] 2 [Guid] 3028098887 [EditorId] 3028098887 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J5TC0EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [32660] Host "[IP] 192.168.2.221 [Port] 0 [Flags] 2 [Guid] 161601561 [EditorId] 161601561 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J5TC0EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [13340] Host "[IP] 192.168.2.221 [Port] 0 [Flags] 2 [Guid] 3028098887 [EditorId] 3028098887 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J5TC0EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [32660] Host "[IP] 192.168.2.221 [Port] 0 [Flags] 2 [Guid] 161601561 [EditorId] 161601561 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J5TC0EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 5.66 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2184.37 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.7f1 (b16b3b16c7a0)
 [Subsystems] Discovering subsystems at path D:/programs/Unity Editors/2022.3.7f1/Editor/Data/Resources/UnitySubsystems
@@ -69,46 +69,46 @@ Initialize mono
 Mono path[0] = 'D:/programs/Unity Editors/2022.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'D:/programs/Unity Editors/2022.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/programs/Unity Editors/2022.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56924
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56880
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/programs/Unity Editors/2022.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: D:/programs/Unity Editors/2022.3.7f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.005036 seconds.
-- Loaded All Assemblies, in  0.366 seconds
+Registered in 0.005166 seconds.
+- Loaded All Assemblies, in 10.846 seconds
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.274 seconds
-Domain Reload Profiling: 640ms
-	BeginReloadAssembly (106ms)
+- Finished resetting the current domain, in  0.360 seconds
+Domain Reload Profiling: 11207ms
+	BeginReloadAssembly (7782ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (53ms)
-	LoadAllAssembliesAndSetupDomain (160ms)
-		LoadAssemblies (105ms)
+	RebuildCommonClasses (765ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (2222ms)
+		LoadAssemblies (7782ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (158ms)
-			TypeCache.Refresh (157ms)
-				TypeCache.ScanAssembly (143ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (274ms)
+		AnalyzeDomain (2220ms)
+			TypeCache.Refresh (2218ms)
+				TypeCache.ScanAssembly (1775ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (361ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (213ms)
+		SetupLoadedEditorAssemblies (278ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (6ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (137ms)
-			ProcessInitializeOnLoadMethodAttributes (60ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (167ms)
+			ProcessInitializeOnLoadMethodAttributes (90ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -118,52 +118,52 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.658 seconds
-Refreshing native plugins compatible for Editor in 1.74 ms, found 3 plugins.
+- Loaded All Assemblies, in  9.622 seconds
+Refreshing native plugins compatible for Editor in 2.03 ms, found 3 plugins.
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.640 seconds
-Domain Reload Profiling: 1298ms
-	BeginReloadAssembly (151ms)
+- Finished resetting the current domain, in  0.659 seconds
+Domain Reload Profiling: 10281ms
+	BeginReloadAssembly (1021ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (21ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (35ms)
-	LoadAllAssembliesAndSetupDomain (426ms)
-		LoadAssemblies (307ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (8509ms)
+		LoadAssemblies (8914ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (203ms)
-			TypeCache.Refresh (173ms)
-				TypeCache.ScanAssembly (155ms)
-			ScanForSourceGeneratedMonoScriptInfo (22ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (640ms)
+		AnalyzeDomain (542ms)
+			TypeCache.Refresh (521ms)
+				TypeCache.ScanAssembly (430ms)
+			ScanForSourceGeneratedMonoScriptInfo (15ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (660ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (460ms)
+		SetupLoadedEditorAssemblies (486ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (5ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (116ms)
-			ProcessInitializeOnLoadAttributes (309ms)
+			BeforeProcessingInitializeOnLoad (91ms)
+			ProcessInitializeOnLoadAttributes (359ms)
 			ProcessInitializeOnLoadMethodAttributes (21ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (14ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 1.78 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (12ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
+Refreshing native plugins compatible for Editor in 3.27 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3095 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (56.5 KB). Loaded Objects now: 3562.
-Memory consumption went from 120.8 MB to 120.7 MB.
-Total: 2.947600 ms (FindLiveObjects: 0.245800 ms CreateObjectMapping: 0.236500 ms MarkObjects: 2.353400 ms  DeleteObjects: 0.110900 ms)
+Unloading 3096 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (56.4 KB). Loaded Objects now: 3563.
+Memory consumption went from 121.3 MB to 121.2 MB.
+Total: 3.449700 ms (FindLiveObjects: 0.258100 ms CreateObjectMapping: 0.258300 ms MarkObjects: 2.800900 ms  DeleteObjects: 0.131000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -180,65 +180,54 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1956792.989431 seconds.
-  path: Assets/Scenes/17.unity
-  artifactKey: Guid(d188766195d2c974099346b10b6d6a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/17.unity using Guid(d188766195d2c974099346b10b6d6a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '032dc87f9e57435326f1a9287493e9f5') in 0.013017 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 252.431145 seconds.
-  path: Assets/Props/Scripts/Rendering 17/My Lightmapping.cginc
-  artifactKey: Guid(331bbf3a6ccb273428abcf0315ed0bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 17/My Lightmapping.cginc using Guid(331bbf3a6ccb273428abcf0315ed0bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efebcaba11a6baa6f4271198d6bdb19e') in 0.011503 seconds
+  Time since last request: 2243653.727522 seconds.
+  path: Assets/Props/Scripts/Rendering 17/MyDeferredShading.cginc
+  artifactKey: Guid(c90d629c43af7e446bde3cd501938063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Scripts/Rendering 17/MyDeferredShading.cginc using Guid(c90d629c43af7e446bde3cd501938063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3db9823f39bef55f8c4288a33efcfbac') in 0.042085 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 5877.860450 seconds.
-  path: Assets/Scenes/17/Lightmap-0_comp_light.exr
-  artifactKey: Guid(10ff61fedadc12b4d87ae85987d8a607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/17/Lightmap-0_comp_light.exr using Guid(10ff61fedadc12b4d87ae85987d8a607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8a83d8fd03ec096ff2b09b212fd6c63') in 1.440735 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Scenes/17/ReflectionProbe-0.exr
-  artifactKey: Guid(4442624833049a149989401812bfa651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/17/ReflectionProbe-0.exr using Guid(4442624833049a149989401812bfa651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9da129b69040523247c54dee9f5489fb') in 0.314189 seconds
-Number of updated asset objects reloaded before import = 0
+  Time since last request: 68276.007840 seconds.
+  path: Assets/Props/Scripts/Rendering 17/MyDeferredShading.cginc
+  artifactKey: Guid(c90d629c43af7e446bde3cd501938063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Scripts/Rendering 17/MyDeferredShading.cginc using Guid(c90d629c43af7e446bde3cd501938063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98d5f191004fe5c2e546a0eae73502a2') in 0.001412 seconds
+Number of updated asset objects reloaded before import = 1
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 3771.467021 seconds.
+  Time since last request: 6803.606145 seconds.
+  path: Assets/Props/Materials/Rendering 17/Green Ground 1.mat
+  artifactKey: Guid(0781cad8b780f5748ae6dac6f55f006c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Materials/Rendering 17/Green Ground 1.mat using Guid(0781cad8b780f5748ae6dac6f55f006c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a5776e99dda2d8ae65f2bcc9dd358f4') in 0.398377 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 2212.460853 seconds.
+  path: Assets/Props/Materials/Rendering 17/Red Ground.mat
+  artifactKey: Guid(0781cad8b780f5748ae6dac6f55f006c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Materials/Rendering 17/Red Ground.mat using Guid(0781cad8b780f5748ae6dac6f55f006c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb3dd2259e80672c945569bee50012e7') in 0.216124 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 874.134950 seconds.
   path: Assets/Scenes/17/Lightmap-0_comp_dir.png
   artifactKey: Guid(b16ffea23533efb43938427a68d706e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/17/Lightmap-0_comp_dir.png using Guid(b16ffea23533efb43938427a68d706e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c184bbc173d666884866db5d302682a') in 0.082156 seconds
+Start importing Assets/Scenes/17/Lightmap-0_comp_dir.png using Guid(b16ffea23533efb43938427a68d706e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4204b5406579f05304d1d0ff89ed3d2') in 0.056189 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000089 seconds.
-  path: Assets/Scenes/17/Lightmap-2_comp_dir.png
-  artifactKey: Guid(e14541fe42373e34bbb7e5d02d27a57f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/17/Lightmap-2_comp_dir.png using Guid(e14541fe42373e34bbb7e5d02d27a57f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5209b2ea7779f068fcc04c64696077b') in 0.020803 seconds
+  Time since last request: 0.052482 seconds.
+  path: Assets/Scenes/17/Lightmap-0_comp_light.exr
+  artifactKey: Guid(10ff61fedadc12b4d87ae85987d8a607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/17/Lightmap-0_comp_light.exr using Guid(10ff61fedadc12b4d87ae85987d8a607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9207ca1b7c50c24a27d82657571e21fa') in 0.106635 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Scenes/17/Lightmap-2_comp_light.exr
-  artifactKey: Guid(b82fef0ef9fd2f047ac5a3c5a1875a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/17/Lightmap-2_comp_light.exr using Guid(b82fef0ef9fd2f047ac5a3c5a1875a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '316324b10ae0e44f154ed7febba74613') in 1.214847 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Scenes/17/Lightmap-1_comp_dir.png
-  artifactKey: Guid(a484a338c8b897240acdc056bd01f5ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/17/Lightmap-1_comp_dir.png using Guid(a484a338c8b897240acdc056bd01f5ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1464777c1138d423d70baaf4868f6517') in 0.016090 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

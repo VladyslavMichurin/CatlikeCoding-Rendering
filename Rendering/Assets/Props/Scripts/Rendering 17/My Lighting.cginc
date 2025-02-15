@@ -11,6 +11,18 @@
     #define FOG_ON 1
 #endif
 
+#if !defined(LIGHTMAP_ON) && defined(SHADOWS_SCREEN)
+	#if defined(SHADOWS_SHADOWMASK) && !defined(UNITY_NO_SCREENSPACE_SHADOWS)
+		#define ADDITIONAL_MASKED_DIRECTIONAL_SHADOWS 1
+	#endif
+#endif
+
+#if defined(LIGHTMAP_ON) && defined(SHADOWS_SCREEN)
+	#if defined(LIGHTMAP_SHADOW_MIXING) && !defined(SHADOWS_SHADOWMASK)
+		#define SUBTRACTIVE_LIGHTING 1
+	#endif
+#endif
+
 struct appdata
 {
    float4 vertex : POSITION;
@@ -44,7 +56,7 @@ struct Interpolators
 		float3 vertexLightColor : TEXCOORD6;
 	#endif
 
-    #if defined(LIGHTMAP_ON)
+    #if defined(LIGHTMAP_ON) || ADDITIONAL_MASKED_DIRECTIONAL_SHADOWS
 		float2 lightmapUV : TEXCOORD6;
 	#endif
 
@@ -56,6 +68,11 @@ struct FragmentOutput
 		float4 gBuffer1 : SV_Target1;
 		float4 gBuffer2 : SV_Target2;
 		float4 gBuffer3 : SV_Target3;
+
+        #if defined(SHADOWS_SHADOWMASK) && (UNITY_ALLOWED_MRT_COUNT > 4)
+            float4 gBuffer4 : SV_Target4;
+        #endif
+
 	#else
 		float4 color : SV_Target;
 	#endif
@@ -196,11 +213,11 @@ Interpolators MyVertexProgram (appdata v)
 	i.uv.xy = TRANSFORM_TEX(v.uv, _MainTex);
 	i.uv.zw = TRANSFORM_TEX(v.uv, _DetailTex);
 
-    #if defined(LIGHTMAP_ON)
+    #if defined(LIGHTMAP_ON) || ADDITIONAL_MASKED_DIRECTIONAL_SHADOWS
 		i.lightmapUV = v.uv1 * unity_LightmapST.xy + unity_LightmapST.zw;
 	#endif
 
-    UNITY_TRANSFER_SHADOW(i, i.uv1);
+    UNITY_TRANSFER_SHADOW(i, v.uv1);
 
 	ComputeVertexLightColor(i);
 
@@ -231,22 +248,42 @@ float4 ApplyFog (float4 color, Interpolators i)
 
 float FadeShadows (Interpolators i, float attenuation) 
 {
-    #if HANDLE_SHADOWS_BLENDING_IN_GI
+    #if HANDLE_SHADOWS_BLENDING_IN_GI || ADDITIONAL_MASKED_DIRECTIONAL_SHADOWS
+        #if ADDITIONAL_MASKED_DIRECTIONAL_SHADOWS
+			attenuation = SHADOW_ATTENUATION(i);
+		#endif
 	    float viewZ =
 		    dot(_WorldSpaceCameraPos - i.worldPos, UNITY_MATRIX_V[2].xyz);
 	    float shadowFadeDistance =
 		    UnityComputeShadowFadeDistance(i.worldPos, viewZ);
 	    float shadowFade = UnityComputeShadowFade(shadowFadeDistance);
-	    attenuation = saturate(attenuation + shadowFade);
+        float bakedAttenuation = UnitySampleBakedOcclusion(i.lightmapUV, i.worldPos);
+	    attenuation = UnityMixRealtimeAndBakedShadows(attenuation, bakedAttenuation, shadowFade);
     #endif
 	return attenuation;
+}
+
+void ApplySubtractiveLighting (Interpolators i, inout UnityIndirect indirectLight) 
+{
+    #if SUBTRACTIVE_LIGHTING
+		UNITY_LIGHT_ATTENUATION(attenuation, i, i.worldPos.xyz);
+		attenuation = FadeShadows(i, attenuation);
+	    
+        float ndotl = saturate(dot(i.normal, _WorldSpaceLightPos0.xyz));
+        float3 shadowedLightEstimate = ndotl * (1 - attenuation) * _LightColor0.rgb;
+        float3 subtractedLight = indirectLight.diffuse - shadowedLightEstimate;
+        subtractedLight = max(subtractedLight, unity_ShadowColor.rgb);
+        subtractedLight = lerp(subtractedLight, indirectLight.diffuse, _LightShadowData.x);
+		indirectLight.diffuse = min(subtractedLight, indirectLight.diffuse);
+
+    #endif
 }
 
 UnityLight CreateLight (Interpolators i)
 {
     UnityLight light;
 
-    #if defined(DEFERRED_PASS)
+    #if defined(DEFERRED_PASS) || SUBTRACTIVE_LIGHTING
 		light.dir = float3(0, 1, 0);
 		light.color = 0;
 	#else
@@ -299,6 +336,8 @@ UnityIndirect CreateIndirectLight (Interpolators i, float3 viewDir)
                 indirectLight.diffuse = 
                 DecodeDirectionalLightmap(indirectLight.diffuse, lightmapDirection, i.normal);         
             #endif
+
+            ApplySubtractiveLighting(i, indirectLight);
 
 		#else
 		    indirectLight.diffuse += max(0, ShadeSH9(float4(i.normal, 1)));
@@ -438,6 +477,14 @@ FragmentOutput MyFragmentProgram (Interpolators i) : SV_Target
         output.gBuffer2 = float4(i.normal * 0.5 + 0.5, 1);
 
         output.gBuffer3 = color;
+
+        #if defined(SHADOWS_SHADOWMASK) &&(UNITY_ALLOWED_MRT_COUNT > 4)
+            float2 shadowUV = 0;
+            #if defined(LIGHTMAP_ON)
+				shadowUV = i.lightmapUV;
+			#endif
+            output.gBuffer4 = UnityGetRawBakedOcclusions(shadowUV, i.worldPos.xyz);
+        #endif
 
 	#else
         output.color = ApplyFog(color, i);
