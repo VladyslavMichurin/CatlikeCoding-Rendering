@@ -36,8 +36,6 @@ Shader "_MyShaders/_CatlikeCoding/18)Realtime GI, Probe Volumes, LOD Groups"
 
     CGINCLUDE
 
-	#pragma target 3.0
-
 	#define BINORMAL_PER_FRAGMENT
     //#define FOG_DISTANCE
 
@@ -57,6 +55,8 @@ Shader "_MyShaders/_CatlikeCoding/18)Realtime GI, Probe Volumes, LOD Groups"
 			ZWrite [_ZWrite]
 
 			CGPROGRAM
+
+			#pragma target 3.0
 
 			#pragma vertex MyVertexProgram
 			#pragma fragment MyFragmentProgram
@@ -95,6 +95,8 @@ Shader "_MyShaders/_CatlikeCoding/18)Realtime GI, Probe Volumes, LOD Groups"
 
 			CGPROGRAM
 
+			#pragma target 3.0
+
 			#pragma vertex MyVertexProgram
 			#pragma fragment MyFragmentProgram
 
@@ -124,6 +126,8 @@ Shader "_MyShaders/_CatlikeCoding/18)Realtime GI, Probe Volumes, LOD Groups"
 			}
 
 			CGPROGRAM
+
+			#pragma target 3.0
 
 			#pragma vertex MyVertexProgram
 			#pragma fragment MyFragmentProgram
@@ -157,6 +161,8 @@ Shader "_MyShaders/_CatlikeCoding/18)Realtime GI, Probe Volumes, LOD Groups"
 			}
 
 			CGPROGRAM
+
+			#pragma target 3.0
 
 			#pragma multi_compile_shadowcaster
 

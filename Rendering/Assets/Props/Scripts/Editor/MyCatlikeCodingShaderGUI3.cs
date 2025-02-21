@@ -17,6 +17,7 @@ public class MyCatlikeCodingShaderGUI3 : ShaderGUI
     {
         Opaque, Cutout, Fade, Transparent
     }
+
     bool shouldShowAlphaCutoff;
 
     struct RenderingSettings
@@ -237,6 +238,7 @@ public class MyCatlikeCodingShaderGUI3 : ShaderGUI
             SetKeyword("_OCCLUSION_MAP", occlusionMap.textureValue);
         }
     }
+
     void DoEmission()
     {
         MaterialProperty emissionMap = FindProperty("_EmissionMap");
@@ -247,24 +249,25 @@ public class MyCatlikeCodingShaderGUI3 : ShaderGUI
 
         EditorGUI.BeginChangeCheck();
 
-        editor.TexturePropertyWithHDRColor(emissionLabel, emissionMap, emissionColor, false);
+        editor.TexturePropertyWithHDRColor
+            (emissionLabel, emissionMap, emissionColor, false);
         editor.LightmapEmissionProperty(2);
 
-        if (EditorGUI.EndChangeCheck() && tex != emissionMap.textureValue)
+        if (EditorGUI.EndChangeCheck())
         {
             if (tex != emissionMap.textureValue)
             {
                 SetKeyword("_EMISSION_MAP", emissionMap.textureValue);
             }
 
-            foreach(Material m in editor.targets)
+            foreach (Material m in editor.targets)
             {
                 m.globalIlluminationFlags &=
                     ~MaterialGlobalIlluminationFlags.EmissiveIsBlack;
             }
-
         }
     }
+
     void DoDetailMask()
     {
         MaterialProperty detailMaskMap = FindProperty("_DetailMask");

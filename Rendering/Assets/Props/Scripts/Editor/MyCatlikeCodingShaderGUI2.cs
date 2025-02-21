@@ -249,7 +249,7 @@ public class MyCatlikeCodingShaderGUI2 : ShaderGUI
 
         editor.TexturePropertyWithHDRColor(emissionLabel, emissionMap, emissionColor, false);
 
-        if (EditorGUI.EndChangeCheck() && tex != emissionMap.textureValue)
+        if (EditorGUI.EndChangeCheck())
         {
             if (tex != emissionMap.textureValue)
             {
