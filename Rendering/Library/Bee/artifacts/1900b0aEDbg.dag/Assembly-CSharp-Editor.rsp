@@ -370,6 +370,7 @@
 -analyzer:"D:/programs/Unity Editors/2022.3.7f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI.cs"
 "Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI2.cs"
+"Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI3.cs"
 -langversion:9.0
 
 /deterministic

@@ -359,6 +359,7 @@
 "Assets/Props/Scripts/Rendering 1/Transformation.cs"
 "Assets/Props/Scripts/Rendering 1/TransformationGrid.cs"
 "Assets/Props/Scripts/Rendering 14/DeferredFogEffect.cs"
+"Assets/Props/Scripts/Rendering 18/EmissiveOscillator.cs"
 "Assets/Props/Scripts/Rendering 6/TangentSpaceVisualizer.cs"
 "Assets/Props/Scripts/Rendering 8/MoveBetweenPoints.cs"
 -langversion:9.0
