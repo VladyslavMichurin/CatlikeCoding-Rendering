@@ -32,9 +32,47 @@ struct appdata
     float2 uv1 : TEXCOORD1;
     float2 uv2 : TEXCOORD2;
 };
-struct Interpolators 
+struct InterpolatorsVertex 
 {
 	float4 pos : SV_POSITION;
+	float4 uv : TEXCOORD0;
+	float3 normal : TEXCOORD1;
+
+	#if defined(BINORMAL_PER_FRAGMENT)
+		float4 tangent : TEXCOORD2;
+	#else
+		float3 tangent : TEXCOORD2;
+		float3 binormal : TEXCOORD3;
+	#endif
+
+    #if FOG_DEPTH
+		float4 worldPos : TEXCOORD4;
+	#else
+		float3 worldPos : TEXCOORD4;
+	#endif
+
+    UNITY_SHADOW_COORDS(5)
+
+	#if defined(VERTEXLIGHT_ON)
+		float3 vertexLightColor : TEXCOORD6;
+	#endif
+
+    #if defined(LIGHTMAP_ON) || ADDITIONAL_MASKED_DIRECTIONAL_SHADOWS
+		float2 lightmapUV : TEXCOORD6;
+	#endif
+
+	#if defined(DYNAMICLIGHTMAP_ON)
+		float2 dynamicLightmapUV : TEXCOORD7;
+	#endif
+
+};
+struct Interpolators 
+{
+	#if defined(LOD_FADE_CROSSFADE)
+		UNITY_VPOS_TYPE vpos : VPOS;
+	#else
+		float4 pos : SV_POSITION;
+	#endif
 	float4 uv : TEXCOORD0;
 	float3 normal : TEXCOORD1;
 
@@ -205,14 +243,18 @@ float3 CreateBinormal(float3 normal, float3 tangent, float binormalSign)
     return cross(normal, tangent.xyz) * (binormalSign * unity_WorldTransformParams.w);
 }
 
-Interpolators MyVertexProgram (appdata v) {
-	Interpolators i;
+InterpolatorsVertex MyVertexProgram (appdata v) 
+{
+	InterpolatorsVertex i;
+
 	UNITY_INITIALIZE_OUTPUT(Interpolators, i);
 	i.pos = UnityObjectToClipPos(v.vertex);
 	i.worldPos.xyz = mul(unity_ObjectToWorld, v.vertex);
+
 	#if FOG_DEPTH
 		i.worldPos.w = i.pos.z;
 	#endif
+
 	i.normal = UnityObjectToWorldNormal(v.normal);
 
 	#if defined(BINORMAL_PER_FRAGMENT)
@@ -283,10 +325,8 @@ UnityLight CreateLight (Interpolators i) {
 	return light;
 }
 
-float3 BoxProjection (
-	float3 direction, float3 position,
-	float4 cubemapPosition, float3 boxMin, float3 boxMax
-) {
+float3 BoxProjection (float3 direction, float3 position,float4 cubemapPosition, float3 boxMin, float3 boxMax) 
+{
 	#if UNITY_SPECCUBE_BOX_PROJECTION
 		UNITY_BRANCH
 		if (cubemapPosition.w > 0) {
@@ -299,9 +339,8 @@ float3 BoxProjection (
 	return direction;
 }
 
-void ApplySubtractiveLighting (
-	Interpolators i, inout UnityIndirect indirectLight
-) {
+void ApplySubtractiveLighting (Interpolators i, inout UnityIndirect indirectLight)
+{
 	#if SUBTRACTIVE_LIGHTING
 		UNITY_LIGHT_ATTENUATION(attenuation, i, i.worldPos.xyz);
 		attenuation = FadeShadows(i, attenuation);
@@ -317,7 +356,8 @@ void ApplySubtractiveLighting (
 	#endif
 }
 
-UnityIndirect CreateIndirectLight (Interpolators i, float3 viewDir) {
+UnityIndirect CreateIndirectLight (Interpolators i, float3 viewDir) 
+{
 	UnityIndirect indirectLight;
 	indirectLight.diffuse = 0;
 	indirectLight.specular = 0;
@@ -332,37 +372,44 @@ UnityIndirect CreateIndirectLight (Interpolators i, float3 viewDir) {
 				DecodeLightmap(UNITY_SAMPLE_TEX2D(unity_Lightmap, i.lightmapUV));
 			
 			#if defined(DIRLIGHTMAP_COMBINED)
-				float4 lightmapDirection = UNITY_SAMPLE_TEX2D_SAMPLER(
-					unity_LightmapInd, unity_Lightmap, i.lightmapUV
-				);
-				indirectLight.diffuse = DecodeDirectionalLightmap(
-					indirectLight.diffuse, lightmapDirection, i.normal
-				);
+				float4 lightmapDirection = UNITY_SAMPLE_TEX2D_SAMPLER(unity_LightmapInd, unity_Lightmap, i.lightmapUV);
+				indirectLight.diffuse = DecodeDirectionalLightmap(indirectLight.diffuse, lightmapDirection, i.normal);
 			#endif
 
 			ApplySubtractiveLighting(i, indirectLight);
 		#endif
 
 		#if defined(DYNAMICLIGHTMAP_ON)
-			float3 dynamicLightDiffuse = DecodeRealtimeLightmap(
-				UNITY_SAMPLE_TEX2D(unity_DynamicLightmap, i.dynamicLightmapUV)
-			);
+			float3 dynamicLightDiffuse = DecodeRealtimeLightmap(UNITY_SAMPLE_TEX2D(unity_DynamicLightmap, i.dynamicLightmapUV));
 
 			#if defined(DIRLIGHTMAP_COMBINED)
-				float4 dynamicLightmapDirection = UNITY_SAMPLE_TEX2D_SAMPLER(
-					unity_DynamicDirectionality, unity_DynamicLightmap,
-					i.dynamicLightmapUV
-				);
-            	indirectLight.diffuse += DecodeDirectionalLightmap(
-            		dynamicLightDiffuse, dynamicLightmapDirection, i.normal
-            	);
+				float4 dynamicLightmapDirection = UNITY_SAMPLE_TEX2D_SAMPLER(unity_DynamicDirectionality, unity_DynamicLightmap,i.dynamicLightmapUV);
+            	indirectLight.diffuse += 
+				DecodeDirectionalLightmap(dynamicLightDiffuse, dynamicLightmapDirection, i.normal);
 			#else
 				indirectLight.diffuse += dynamicLightDiffuse;
 			#endif
 		#endif
 
 		#if !defined(LIGHTMAP_ON) && !defined(DYNAMICLIGHTMAP_ON)
-			indirectLight.diffuse += max(0, ShadeSH9(float4(i.normal, 1)));
+			#if UNITY_LIGHT_PROBE_PROXY_VOLUME
+				if(unity_ProbeVolumeParams.x == 1)
+				{
+					indirectLight.diffuse = SHEvalLinearL0L1_SampleProbeVolume(float4(i.normal, 1), i.worldPos);
+					indirectLight.diffuse = max(0, indirectLight.diffuse);
+
+					#if defined(UNITY_COLORSPACE_GAMMA)
+			            indirectLight.diffuse = LinearToGammaSpace(indirectLight.diffuse);
+			        #endif
+
+				}
+				else
+				{
+					indirectLight.diffuse += max(0, ShadeSH9(float4(i.normal, 1)));
+				}
+			#else
+				indirectLight.diffuse += max(0, ShadeSH9(float4(i.normal, 1)));
+			#endif
 		#endif
 
 		float3 reflectionDir = reflect(-viewDir, i.normal);
@@ -373,9 +420,8 @@ UnityIndirect CreateIndirectLight (Interpolators i, float3 viewDir) {
 			unity_SpecCube0_ProbePosition,
 			unity_SpecCube0_BoxMin, unity_SpecCube0_BoxMax
 		);
-		float3 probe0 = Unity_GlossyEnvironment(
-			UNITY_PASS_TEXCUBE(unity_SpecCube0), unity_SpecCube0_HDR, envData
-		);
+
+		float3 probe0 = Unity_GlossyEnvironment(UNITY_PASS_TEXCUBE(unity_SpecCube0), unity_SpecCube0_HDR, envData);
 		envData.reflUVW = BoxProjection(
 			reflectionDir, i.worldPos.xyz,
 			unity_SpecCube1_ProbePosition,
@@ -384,14 +430,15 @@ UnityIndirect CreateIndirectLight (Interpolators i, float3 viewDir) {
 		#if UNITY_SPECCUBE_BLENDING
 			float interpolator = unity_SpecCube0_BoxMin.w;
 			UNITY_BRANCH
-			if (interpolator < 0.99999) {
+			if (interpolator < 0.99999) 
+			{
 				float3 probe1 = Unity_GlossyEnvironment(
 					UNITY_PASS_TEXCUBE_SAMPLER(unity_SpecCube1, unity_SpecCube0),
-					unity_SpecCube0_HDR, envData
-				);
+					unity_SpecCube0_HDR, envData);
 				indirectLight.specular = lerp(probe1, probe0, interpolator);
 			}
-			else {
+			else 
+			{
 				indirectLight.specular = probe0;
 			}
 		#else
@@ -441,7 +488,12 @@ float4 ApplyFog (float4 color, Interpolators i) {
 	return color;
 }
 
-FragmentOutput MyFragmentProgram (Interpolators i) {
+FragmentOutput MyFragmentProgram (Interpolators i) 
+{
+	#if defined(LOD_FADE_CROSSFADE)
+		UnityApplyDitherCrossFade(i.vpos);
+	#endif
+
 	float alpha = GetAlpha(i);
 	#if defined(_RENDERING_CUTOUT)
 		clip(alpha - _Cutoff);
@@ -453,9 +505,7 @@ FragmentOutput MyFragmentProgram (Interpolators i) {
 
 	float3 specularTint;
 	float oneMinusReflectivity;
-	float3 albedo = DiffuseAndSpecularFromMetallic(
-		GetAlbedo(i), GetMetallic(i), specularTint, oneMinusReflectivity
-	);
+	float3 albedo = DiffuseAndSpecularFromMetallic(GetAlbedo(i), GetMetallic(i), specularTint, oneMinusReflectivity);
 	#if defined(_RENDERING_TRANSPARENT)
 		albedo *= alpha;
 		alpha = 1 - oneMinusReflectivity + alpha * oneMinusReflectivity;
@@ -468,6 +518,7 @@ FragmentOutput MyFragmentProgram (Interpolators i) {
 		CreateLight(i), CreateIndirectLight(i, viewDir)
 	);
 	color.rgb += GetEmission(i);
+
 	#if defined(_RENDERING_FADE) || defined(_RENDERING_TRANSPARENT)
 		color.a = alpha;
 	#endif

@@ -63,6 +63,7 @@ Shader "_MyShaders/_CatlikeCoding/18)Realtime GI, Probe Volumes, LOD Groups"
 
 			#pragma multi_compile_fwdbase
 			#pragma multi_compile_fog
+			#pragma multi_compile _ LOD_FADE_CROSSFADE
 
 			#pragma shader_feature _ _RENDERING_CUTOUT _RENDERING_FADE _RENDERING_TRANSPARENT
 			#pragma shader_feature _METALLIC_MAP
@@ -102,6 +103,7 @@ Shader "_MyShaders/_CatlikeCoding/18)Realtime GI, Probe Volumes, LOD Groups"
 
 			#pragma multi_compile_fwdadd_fullshadows
 			#pragma multi_compile_fog
+			#pragma multi_compile _ LOD_FADE_CROSSFADE
 
 			#pragma shader_feature _ _RENDERING_CUTOUT _RENDERING_FADE _RENDERING_TRANSPARENT
 			#pragma shader_feature _METALLIC_MAP
@@ -134,6 +136,7 @@ Shader "_MyShaders/_CatlikeCoding/18)Realtime GI, Probe Volumes, LOD Groups"
 
 			#pragma exclude_renderers nomrt
 			#pragma multi_compile_prepassfinal
+			#pragma multi_compile _ LOD_FADE_CROSSFADE
 
 			#pragma shader_feature _ _RENDERING_CUTOUT 
 			#pragma shader_feature _METALLIC_MAP
@@ -165,6 +168,7 @@ Shader "_MyShaders/_CatlikeCoding/18)Realtime GI, Probe Volumes, LOD Groups"
 			#pragma target 3.0
 
 			#pragma multi_compile_shadowcaster
+			#pragma multi_compile _ LOD_FADE_CROSSFADE
 
 			#pragma vertex MyShadowVertexProgram
 			#pragma fragment MyShadowFragmentProgram

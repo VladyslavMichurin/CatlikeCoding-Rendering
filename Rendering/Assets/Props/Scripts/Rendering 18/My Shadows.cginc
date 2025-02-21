@@ -39,7 +39,7 @@
 
 	struct Interpolators 
 	{
-		#if SHADOWS_SEMITRANSPARENT
+		#if SHADOWS_SEMITRANSPARENT || defined(LOD_FADE_CROSSFADE)
 			UNITY_VPOS_TYPE vpos : VPOS;
 		#else
 			float4 positions : SV_POSITION;
@@ -95,6 +95,10 @@
 
 	fixed4 MyShadowFragmentProgram(Interpolators i) : SV_Target
 	{
+		#if defined(LOD_FADE_CROSSFADE)
+			UnityApplyDitherCrossFade(i.vpos);
+		#endif
+
 		float alpha = GetAlpha(i);
 		#if defined(_RENDERING_CUTOUT)
 			clip(alpha - _Cutoff);
