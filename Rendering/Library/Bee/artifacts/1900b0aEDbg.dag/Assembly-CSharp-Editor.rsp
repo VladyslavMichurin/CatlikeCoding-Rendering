@@ -371,6 +371,7 @@
 "Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI.cs"
 "Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI2.cs"
 "Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI3.cs"
+"Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI4.cs"
 -langversion:9.0
 
 /deterministic
