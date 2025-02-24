@@ -41,6 +41,8 @@ Shader "_MyShaders/_CatlikeCoding/20)Parallax"
 
 	#define BINORMAL_PER_FRAGMENT
     //#define FOG_DISTANCE
+	//	#define PARALLAX_BIAS 0
+	//	#define PARALLAX_OFFSET_LIMITING
 
 	ENDCG
 

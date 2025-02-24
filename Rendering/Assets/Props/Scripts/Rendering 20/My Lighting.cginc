@@ -1,5 +1,3 @@
-// Upgrade NOTE: upgraded instancing buffer 'InstanceProperties' to new syntax.
-
 #if !defined(MY_LIGHTING_INCLUDED)
 #define MY_LIGHTING_INCLUDED
 
@@ -514,7 +512,20 @@ void ApplyParallax (inout Interpolators i)
 {
 	#if defined(_PARALLAX_MAP)
 		i.tangentViewDir = normalize(i.tangentViewDir);
-		i.uv.xy += i.tangentViewDir.xy * _ParallaxStrength;
+		#if !defined(PARALLAX_OFFSET_LIMITING)
+			#if !defined(PARALLAX_BIAS)
+				#define PARALLAX_BIAS 0.42
+			#endif
+			i.tangentViewDir.xy /= (i.tangentViewDir.z + PARALLAX_BIAS);
+		#endif
+
+		float height = tex2D(_ParallaxMap, i.uv.xy).g;
+		height -= 0.5f;
+		height *= _ParallaxStrength;
+		float2 uvOffset = i.tangentViewDir.xy * height;
+
+		i.uv.xy += uvOffset;
+		i.uv.zw += uvOffset * (_DetailTex_ST.xy / _MainTex_ST.xy); 
 	#endif
 }
 FragmentOutput MyFragmentProgram (Interpolators i) 

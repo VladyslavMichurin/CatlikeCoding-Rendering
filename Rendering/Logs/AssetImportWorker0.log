@@ -15,7 +15,7 @@ D:/projects/Git/CatlikeCoding-Rendering/Rendering
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59786
+52198
 Successfully changed project path to: D:/projects/Git/CatlikeCoding-Rendering/Rendering
 D:/projects/Git/CatlikeCoding-Rendering/Rendering
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ D:/projects/Git/CatlikeCoding-Rendering/Rendering
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [32568] Host "[IP] 192.168.2.221 [Port] 0 [Flags] 2 [Guid] 2542719046 [EditorId] 2542719046 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J5TC0EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [20148] Host "[IP] 192.168.2.221 [Port] 0 [Flags] 2 [Guid] 4155759638 [EditorId] 4155759638 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J5TC0EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [32568] Host "[IP] 192.168.2.221 [Port] 0 [Flags] 2 [Guid] 2542719046 [EditorId] 2542719046 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J5TC0EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [20148] Host "[IP] 192.168.2.221 [Port] 0 [Flags] 2 [Guid] 4155759638 [EditorId] 4155759638 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J5TC0EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 5.78 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 39.85 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.7f1 (b16b3b16c7a0)
 [Subsystems] Discovering subsystems at path D:/programs/Unity Editors/2022.3.7f1/Editor/Data/Resources/UnitySubsystems
@@ -69,46 +69,46 @@ Initialize mono
 Mono path[0] = 'D:/programs/Unity Editors/2022.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'D:/programs/Unity Editors/2022.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/programs/Unity Editors/2022.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56500
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56056
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/programs/Unity Editors/2022.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: D:/programs/Unity Editors/2022.3.7f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.004808 seconds.
-- Loaded All Assemblies, in  0.367 seconds
+Registered in 0.006242 seconds.
+- Loaded All Assemblies, in  0.495 seconds
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.263 seconds
-Domain Reload Profiling: 629ms
-	BeginReloadAssembly (118ms)
+- Finished resetting the current domain, in  0.280 seconds
+Domain Reload Profiling: 774ms
+	BeginReloadAssembly (199ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (36ms)
+	RebuildCommonClasses (40ms)
 	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (56ms)
-	LoadAllAssembliesAndSetupDomain (145ms)
-		LoadAssemblies (118ms)
+	initialDomainReloadingComplete (57ms)
+	LoadAllAssembliesAndSetupDomain (186ms)
+		LoadAssemblies (198ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (143ms)
-			TypeCache.Refresh (142ms)
-				TypeCache.ScanAssembly (128ms)
+		AnalyzeDomain (184ms)
+			TypeCache.Refresh (182ms)
+				TypeCache.ScanAssembly (168ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (263ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (280ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (201ms)
+		SetupLoadedEditorAssemblies (217ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
+			InitializePlatformSupportModulesInManaged (9ms)
 			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (130ms)
-			ProcessInitializeOnLoadMethodAttributes (54ms)
+			ProcessInitializeOnLoadAttributes (133ms)
+			ProcessInitializeOnLoadMethodAttributes (67ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -118,52 +118,52 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.600 seconds
-Refreshing native plugins compatible for Editor in 1.80 ms, found 3 plugins.
+- Loaded All Assemblies, in  2.140 seconds
+Refreshing native plugins compatible for Editor in 14.12 ms, found 3 plugins.
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.559 seconds
-Domain Reload Profiling: 1159ms
-	BeginReloadAssembly (144ms)
+- Finished resetting the current domain, in  0.569 seconds
+Domain Reload Profiling: 2709ms
+	BeginReloadAssembly (145ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (20ms)
-	RebuildCommonClasses (33ms)
+	RebuildCommonClasses (32ms)
 	RebuildNativeTypeToScriptingClass (11ms)
 	initialDomainReloadingComplete (35ms)
-	LoadAllAssembliesAndSetupDomain (377ms)
-		LoadAssemblies (285ms)
+	LoadAllAssembliesAndSetupDomain (1917ms)
+		LoadAssemblies (1820ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (175ms)
+		AnalyzeDomain (179ms)
 			TypeCache.Refresh (155ms)
-				TypeCache.ScanAssembly (141ms)
-			ScanForSourceGeneratedMonoScriptInfo (14ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (560ms)
+				TypeCache.ScanAssembly (140ms)
+			ScanForSourceGeneratedMonoScriptInfo (15ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (569ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (399ms)
+		SetupLoadedEditorAssemblies (412ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (6ms)
 			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (86ms)
-			ProcessInitializeOnLoadAttributes (278ms)
+			BeforeProcessingInitializeOnLoad (90ms)
+			ProcessInitializeOnLoadAttributes (288ms)
 			ProcessInitializeOnLoadMethodAttributes (21ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (12ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
-Refreshing native plugins compatible for Editor in 2.81 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.31 seconds
+Refreshing native plugins compatible for Editor in 13.17 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3102 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (56.5 KB). Loaded Objects now: 3569.
-Memory consumption went from 122.5 MB to 122.4 MB.
-Total: 4.693900 ms (FindLiveObjects: 0.324400 ms CreateObjectMapping: 0.360900 ms MarkObjects: 3.878600 ms  DeleteObjects: 0.128800 ms)
+Unloading 3104 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (56.5 KB). Loaded Objects now: 3571.
+Memory consumption went from 123.1 MB to 123.0 MB.
+Total: 3.803200 ms (FindLiveObjects: 0.287400 ms CreateObjectMapping: 0.343600 ms MarkObjects: 3.033500 ms  DeleteObjects: 0.137600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -180,314 +180,9 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 354614.228447 seconds.
-  path: Assets/Scenes/20.unity
-  artifactKey: Guid(7dde5d87bb546434588694e5b93e4b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/20.unity using Guid(7dde5d87bb546434588694e5b93e4b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cad3dbe2df7971946b1cb924b1e0dd56') in 0.002674 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 862.415145 seconds.
-  path: Assets/Props/Scripts/Rendering 20
-  artifactKey: Guid(d0057ff6e5f76b94b8440b4ddc29376d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 20 using Guid(d0057ff6e5f76b94b8440b4ddc29376d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46dd40291c0e6322609a380508f47b74') in 0.000593 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 18.079846 seconds.
-  path: Assets/Props/Materials/Rendering 20
-  artifactKey: Guid(87d77742261ae3740ad8512ac91fa4bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Materials/Rendering 20 using Guid(87d77742261ae3740ad8512ac91fa4bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8ec6fc80334f34cabe482c7aeb17d8a') in 0.000364 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 13.133724 seconds.
-  path: Assets/Props/Materials/Rendering 20/Paralax Mat.mat
-  artifactKey: Guid(d8ff40ed92bfc1e48893f6f6f86ef4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Materials/Rendering 20/Paralax Mat.mat using Guid(d8ff40ed92bfc1e48893f6f6f86ef4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92516c1afc7a56414867a5f5b5d00d79') in 0.111317 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 15.443711 seconds.
-  path: Assets/Props/Scripts/Rendering 19/GPU Instancing.shader
-  artifactKey: Guid(fec37cacaf878a74a95fabbb00eb2df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 19/GPU Instancing.shader using Guid(fec37cacaf878a74a95fabbb00eb2df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc4c2d30ab3fabaa14ee092ed50b1a7c') in 0.000595 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.793611 seconds.
-  path: Assets/Props/Scripts/Rendering 19/GPUInstancingTest.cs
-  artifactKey: Guid(1fd7f138d2561b24c90ecc72781adf52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 19/GPUInstancingTest.cs using Guid(1fd7f138d2561b24c90ecc72781adf52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90952f4e291a1ebb9360168f86519fef') in 0.000377 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 9.131581 seconds.
-  path: Assets/Props/Scripts/Rendering 20/My Lighting.cginc
-  artifactKey: Guid(ab88ca3142f89994ea168a93c5cf3c2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 20/My Lighting.cginc using Guid(ab88ca3142f89994ea168a93c5cf3c2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2343f99c7da09b6116a0df25f1409331') in 0.000871 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Props/Scripts/Rendering 20/MyDeferredShading.cginc
-  artifactKey: Guid(8a2bf157d5ee09f4587bd3954a1eb1ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 20/MyDeferredShading.cginc using Guid(8a2bf157d5ee09f4587bd3954a1eb1ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2b18b43e58438cc1e6967c84f269d8b') in 0.000633 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Props/Scripts/Rendering 20/My Shadows.cginc
-  artifactKey: Guid(16f676b01676f6649916eda4a7b1dd0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 20/My Shadows.cginc using Guid(16f676b01676f6649916eda4a7b1dd0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ba6a688f9c22bf22b0a08e2af79a549') in 0.000603 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.861717 seconds.
-  path: Assets/Props/Scripts/Rendering 20/GPU Instancing.shader
-  artifactKey: Guid(149f8a5185e703241b3d44b91eae4160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 20/GPU Instancing.shader using Guid(149f8a5185e703241b3d44b91eae4160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07ae9065d798f99aaaa4030002c2ffe3') in 0.003372 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 10.668936 seconds.
-  path: Assets/Props/Scripts/Rendering 20/Parallax.shader
-  artifactKey: Guid(149f8a5185e703241b3d44b91eae4160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Rendering 20/Parallax.shader using Guid(149f8a5185e703241b3d44b91eae4160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b36cc5997ea97670900a4b6d9b7975f') in 0.001509 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 95.492820 seconds.
-  path: Assets/Props/Materials/Rendering 20/Parallax Mat.mat
-  artifactKey: Guid(d8ff40ed92bfc1e48893f6f6f86ef4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Materials/Rendering 20/Parallax Mat.mat using Guid(d8ff40ed92bfc1e48893f6f6f86ef4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45418a28468397a3959b233f1d606ca3') in 0.015219 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 620.282241 seconds.
-  path: Assets/Props/Textures/20/parallax-albedo.png
-  artifactKey: Guid(4bfbc241d16a95a4d8f9ae0d4730b0b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Textures/20/parallax-albedo.png using Guid(4bfbc241d16a95a4d8f9ae0d4730b0b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbe2fd84aac6f79e54c42e8b5fdfe73f') in 0.026431 seconds
+  Time since last request: 22784.979002 seconds.
+  path: Assets/Props/Textures/20/parallax-detail-grid.png
+  artifactKey: Guid(fb063645544f9db4682fcc4226c7f256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Textures/20/parallax-detail-grid.png using Guid(fb063645544f9db4682fcc4226c7f256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18e44feefdb8d5ab50015cd7c1da15e6') in 0.072254 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 4.164789 seconds.
-  path: Assets/Props/Textures/20/parallax-normals.png
-  artifactKey: Guid(7b9fd5a7b453dab4b90b2edc141d3aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Textures/20/parallax-normals.png using Guid(7b9fd5a7b453dab4b90b2edc141d3aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfef933ba1d3fdf5bbcde4a5d7c41216') in 0.041866 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 450.309806 seconds.
-  path: Assets/Props/Textures/20/parallax-heights.png
-  artifactKey: Guid(497ce5da2db17ec4998b004d99935e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Textures/20/parallax-heights.png using Guid(497ce5da2db17ec4998b004d99935e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '363c6a1b0c6c58dc612adf9517d72412') in 0.017242 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 59.070997 seconds.
-  path: Assets/Props/Textures/20/parallax-heights.png
-  artifactKey: Guid(497ce5da2db17ec4998b004d99935e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Textures/20/parallax-heights.png using Guid(497ce5da2db17ec4998b004d99935e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c35127ddd32657802caeb12002740d76') in 0.019485 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 634.695621 seconds.
-  path: Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI5.cs
-  artifactKey: Guid(83fc71e0eeefb76428994b6d0c101e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI5.cs using Guid(83fc71e0eeefb76428994b6d0c101e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acce87eb70afb3a77350d024bf88a7af') in 0.000789 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 159.847151 seconds.
-  path: Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI5.cs
-  artifactKey: Guid(83fc71e0eeefb76428994b6d0c101e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI5.cs using Guid(83fc71e0eeefb76428994b6d0c101e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c7002005923f747bff0e8487d710b40') in 0.000737 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 27.907843 seconds.
-  path: Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI5.cs
-  artifactKey: Guid(83fc71e0eeefb76428994b6d0c101e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI5.cs using Guid(83fc71e0eeefb76428994b6d0c101e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13879a64b9d478751b2aaf1d30594608') in 0.000497 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 113.222934 seconds.
-  path: Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI5.cs
-  artifactKey: Guid(83fc71e0eeefb76428994b6d0c101e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI5.cs using Guid(83fc71e0eeefb76428994b6d0c101e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a0d8ec532b7ee7a86297962a26688d1') in 0.000586 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 33.498354 seconds.
-  path: Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI5.cs
-  artifactKey: Guid(83fc71e0eeefb76428994b6d0c101e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI5.cs using Guid(83fc71e0eeefb76428994b6d0c101e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1d7fc4c11de86c64558604b572bdeb6') in 0.000478 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 44.565470 seconds.
-  path: Assets/Props/Materials/Rendering 20/Parallax Mat.mat
-  artifactKey: Guid(d8ff40ed92bfc1e48893f6f6f86ef4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Materials/Rendering 20/Parallax Mat.mat using Guid(d8ff40ed92bfc1e48893f6f6f86ef4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b677241cbfa023c570d1116ec35a8f5') in 0.243518 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 7.310768 seconds.
-  path: Assets/Scenes/18/Lightmap-0_comp_light.exr
-  artifactKey: Guid(820da4c421d47234a8bd2962076a081e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/18/Lightmap-0_comp_light.exr using Guid(820da4c421d47234a8bd2962076a081e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd877c536969a9c954b1363e941418022') in 0.119727 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.006430 seconds.
-  path: Assets/Scenes/18/Lightmap-0_comp_shadowmask.png
-  artifactKey: Guid(1daf427e24debd442af1a447d42bc20d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/18/Lightmap-0_comp_shadowmask.png using Guid(1daf427e24debd442af1a447d42bc20d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ace1c631886f3c80936b6e1c974a32b') in 0.131926 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.177336 seconds.
-  path: Assets/Scenes/18/Lightmap-1_comp_light.exr
-  artifactKey: Guid(e7e5c09f566175b4b939396861939ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/18/Lightmap-1_comp_light.exr using Guid(e7e5c09f566175b4b939396861939ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e737787ed88ff0a60bd6566946fb21a4') in 0.157963 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.113681 seconds.
-  path: Assets/Scenes/18/Lightmap-2_comp_light.exr
-  artifactKey: Guid(b9d14034b371e1343a89e65cf86a6d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/18/Lightmap-2_comp_light.exr using Guid(b9d14034b371e1343a89e65cf86a6d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8de43b61e135a04902308bd9769fc7e') in 0.101937 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.035757 seconds.
-  path: Assets/Scenes/18/Lightmap-2_comp_shadowmask.png
-  artifactKey: Guid(3f96c72120e6a65459c6ce3c89cb9076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/18/Lightmap-2_comp_shadowmask.png using Guid(3f96c72120e6a65459c6ce3c89cb9076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '947bb97e40d142aea268af0b23b514f3') in 0.094361 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 14.987268 seconds.
-  path: Assets/Props/Materials/Rendering 20/Parallax Mat.mat
-  artifactKey: Guid(d8ff40ed92bfc1e48893f6f6f86ef4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Materials/Rendering 20/Parallax Mat.mat using Guid(d8ff40ed92bfc1e48893f6f6f86ef4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a44a213ff1cb069b4b42dd6de5271cc9') in 0.021518 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 11269.236908 seconds.
-  path: Assets/Props/Materials/Rendering 20/Parallax Mat.mat
-  artifactKey: Guid(d8ff40ed92bfc1e48893f6f6f86ef4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Materials/Rendering 20/Parallax Mat.mat using Guid(d8ff40ed92bfc1e48893f6f6f86ef4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03d30a68fa6b9fa8eaeb9b2801358711') in 0.202399 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 134.929934 seconds.
-  path: Assets/Props/Materials/Rendering 20/Parallax Mat.mat
-  artifactKey: Guid(d8ff40ed92bfc1e48893f6f6f86ef4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Materials/Rendering 20/Parallax Mat.mat using Guid(d8ff40ed92bfc1e48893f6f6f86ef4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb8858c057c5c76cfab7f594451955c1') in 0.021268 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.588 seconds
-Refreshing native plugins compatible for Editor in 1.93 ms, found 3 plugins.
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.849 seconds
-Domain Reload Profiling: 1437ms
-	BeginReloadAssembly (256ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (89ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (259ms)
-		LoadAssemblies (351ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (26ms)
-			TypeCache.Refresh (11ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (8ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (849ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (391ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (6ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (95ms)
-			ProcessInitializeOnLoadAttributes (257ms)
-			ProcessInitializeOnLoadMethodAttributes (22ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 1.83 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3075 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (30.5 KB). Loaded Objects now: 3618.
-Memory consumption went from 121.8 MB to 121.7 MB.
-Total: 3.399400 ms (FindLiveObjects: 0.247600 ms CreateObjectMapping: 0.239000 ms MarkObjects: 2.867000 ms  DeleteObjects: 0.044900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 79.734842 seconds.
-  path: Assets/Props/Materials/Rendering 20/Parallax Mat.mat
-  artifactKey: Guid(d8ff40ed92bfc1e48893f6f6f86ef4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Materials/Rendering 20/Parallax Mat.mat using Guid(d8ff40ed92bfc1e48893f6f6f86ef4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '054906ad26429cfaa4a0342fbba91ac1') in 0.087125 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
