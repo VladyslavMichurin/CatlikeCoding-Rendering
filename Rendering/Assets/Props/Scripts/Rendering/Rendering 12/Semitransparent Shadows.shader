@@ -1,4 +1,4 @@
-Shader "_MyShaders/_CatlikeCoding/12)Semitransparent Shadows"
+Shader "_MyShaders/_CatlikeCoding/Rendering/12)Semitransparent Shadows"
 {
     Properties
     {

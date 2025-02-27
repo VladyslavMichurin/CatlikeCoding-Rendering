@@ -1,4 +1,4 @@
-Shader "_MyShaders/_CatlikeCoding/11)Transparency"
+Shader "_MyShaders/_CatlikeCoding/Rendering/11)Transparency"
 {
     Properties
     {

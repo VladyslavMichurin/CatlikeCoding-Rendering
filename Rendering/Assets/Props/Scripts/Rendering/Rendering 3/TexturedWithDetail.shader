@@ -1,4 +1,4 @@
-Shader "_MyShaders/_CatlikeCoding/02)Textured With Detail"
+Shader "_MyShaders/_CatlikeCoding/Rendering/02)Textured With Detail"
 {
 	Properties
 	{

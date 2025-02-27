@@ -1,4 +1,4 @@
-Shader "_MyShaders/_CatlikeCoding/03)TextureSplatting"
+Shader "_MyShaders/_CatlikeCoding/Rendering/03)TextureSplatting"
 {
    Properties
 	{

@@ -1,4 +1,4 @@
-Shader "_MyShaders/_CatlikeCoding/18)Realtime GI, Probe Volumes, LOD Groups"
+Shader "_MyShaders/_CatlikeCoding/Rendering/18)Realtime GI, Probe Volumes, LOD Groups"
 {
     Properties
     {

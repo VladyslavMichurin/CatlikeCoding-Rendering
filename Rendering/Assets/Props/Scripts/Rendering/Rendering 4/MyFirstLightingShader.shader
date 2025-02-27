@@ -1,4 +1,4 @@
-Shader "_MyShaders/_CatlikeCoding/04)MyFirstLightingShader"
+Shader "_MyShaders/_CatlikeCoding/Rendering/04)MyFirstLightingShader"
 {
     Properties
     {

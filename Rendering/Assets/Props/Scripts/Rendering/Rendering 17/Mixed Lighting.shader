@@ -1,4 +1,4 @@
-Shader "_MyShaders/_CatlikeCoding/17)Mixed Lighting"
+Shader "_MyShaders/_CatlikeCoding/Rendering/17)Mixed Lighting"
 {
     Properties
     {

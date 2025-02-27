@@ -1,4 +1,4 @@
-Shader "_MyShaders/_CatlikeCoding/20)Parallax"
+Shader "_MyShaders/_CatlikeCoding/Rendering/20)Parallax"
 {
     Properties
     {

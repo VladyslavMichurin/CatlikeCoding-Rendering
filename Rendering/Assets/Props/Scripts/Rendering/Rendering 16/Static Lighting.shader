@@ -1,4 +1,4 @@
-Shader "_MyShaders/_CatlikeCoding/16)Static Lighting"
+Shader "_MyShaders/_CatlikeCoding/Rendering/16)Static Lighting"
 {
     Properties
     {

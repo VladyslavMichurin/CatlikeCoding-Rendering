@@ -1,4 +1,4 @@
-Shader "_MyShaders/_CatlikeCoding/05)MultipleLighting"
+Shader "_MyShaders/_CatlikeCoding/Rendering/05)MultipleLighting"
 {
     Properties
     {

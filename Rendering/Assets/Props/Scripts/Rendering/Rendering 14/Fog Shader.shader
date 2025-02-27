@@ -1,4 +1,4 @@
-Shader "_MyShaders/_CatlikeCoding/14)Fog"
+Shader "_MyShaders/_CatlikeCoding/Rendering/14)Fog"
 {
     Properties
     {

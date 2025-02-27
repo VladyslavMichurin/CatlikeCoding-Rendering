@@ -1,4 +1,4 @@
-Shader "_MyShaders/_CatlikeCoding/13)Defered Rendering"
+Shader "_MyShaders/_CatlikeCoding/Rendering/13)Defered Rendering"
 {
     Properties
     {

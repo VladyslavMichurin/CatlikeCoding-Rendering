@@ -1,4 +1,4 @@
-Shader "_MyShaders/_CatlikeCoding/07)Shadows"
+Shader "_MyShaders/_CatlikeCoding/Rendering/07)Shadows"
 {
     Properties
     {

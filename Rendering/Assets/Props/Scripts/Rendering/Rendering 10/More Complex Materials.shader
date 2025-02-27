@@ -1,4 +1,4 @@
-Shader "_MyShaders/_CatlikeCoding/10)More Complex Materials"
+Shader "_MyShaders/_CatlikeCoding/Rendering/10)More Complex Materials"
 {
     Properties
     {

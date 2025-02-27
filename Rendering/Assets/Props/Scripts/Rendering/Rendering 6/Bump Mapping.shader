@@ -1,4 +1,4 @@
-Shader "_MyShaders/_CatlikeCoding/06)Bump Mapping Shader"
+Shader "_MyShaders/_CatlikeCoding/Rendering/06)Bump Mapping Shader"
 {
     Properties
     {

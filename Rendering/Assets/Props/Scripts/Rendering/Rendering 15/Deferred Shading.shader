@@ -1,4 +1,4 @@
-Shader "_MyShaders/_CatlikeCoding/15.1)Deferred Shading"
+Shader "_MyShaders/_CatlikeCoding/Rendering/15.1)Deferred Shading"
 {
    Properties {
 	}

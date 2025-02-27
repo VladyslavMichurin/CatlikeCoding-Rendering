@@ -1,4 +1,4 @@
-Shader "_MyShaders/_CatlikeCoding/14.1)Deferred Fog"
+Shader "_MyShaders/_CatlikeCoding/Rendering/14.1)Deferred Fog"
 {
     Properties
     {

@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Rendering/20.unity
+- path: Assets/Scenes/Advanced Rendering/Flat and Wireframe Shading.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

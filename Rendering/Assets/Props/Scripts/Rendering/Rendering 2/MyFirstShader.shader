@@ -1,6 +1,6 @@
 // Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
-Shader "_MyShaders/_CatlikeCoding/01)My First Shader"
+Shader "_MyShaders/_CatlikeCoding/Rendering/01)My First Shader"
 {
 	Properties
 	{

@@ -1,4 +1,4 @@
-Shader "_MyShaders/_CatlikeCoding/08)Reflections"
+Shader "_MyShaders/_CatlikeCoding/Rendering/08)Reflections"
 {
     Properties
     {

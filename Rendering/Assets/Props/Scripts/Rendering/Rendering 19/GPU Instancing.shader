@@ -1,4 +1,4 @@
-Shader "_MyShaders/_CatlikeCoding/19)GPU Instancing"
+Shader "_MyShaders/_CatlikeCoding/Rendering/19)GPU Instancing"
 {
     Properties
     {
