@@ -29,13 +29,17 @@ Shader "_MyShaders/_CatlikeCoding/Advanced Rendering/1)Flat and Wireframe Shadin
 
 		_Cutoff ("Alpha Cutoff", Range(0, 1)) = 0.5
 
+		_WireframeColor ("Wireframe Color", Color) = (0, 0, 0)
+		_WireframeSmoothing ("Wireframe Smoothing", Range(0, 10)) = 1
+		_WireframeThickness ("Wireframe Thickness", Range(0, 10)) = 1
+
 		[HideInInspector] _SrcBlend ("_SrcBlend", Float) = 1
 		[HideInInspector] _DstBlend ("_DstBlend", Float) = 0
 		[HideInInspector] _ZWrite ("_ZWrite", Float) = 1
 
     }
 
-	CustomEditor "MyCatlikeCodingShaderGUI5"
+	CustomEditor "MyCatlikeCodingShaderGUI6"
 
     CGINCLUDE
 
