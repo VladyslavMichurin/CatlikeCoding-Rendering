@@ -15,7 +15,7 @@ D:/projects/Git/CatlikeCoding-Rendering/Rendering
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-63552
+49236
 Successfully changed project path to: D:/projects/Git/CatlikeCoding-Rendering/Rendering
 D:/projects/Git/CatlikeCoding-Rendering/Rendering
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ D:/projects/Git/CatlikeCoding-Rendering/Rendering
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [1756] Host "[IP] 192.168.2.221 [Port] 0 [Flags] 2 [Guid] 3093933764 [EditorId] 3093933764 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J5TC0EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [22176] Host "[IP] 192.168.2.221 [Port] 0 [Flags] 2 [Guid] 3024943217 [EditorId] 3024943217 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J5TC0EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [1756] Host "[IP] 192.168.2.221 [Port] 0 [Flags] 2 [Guid] 3093933764 [EditorId] 3093933764 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J5TC0EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [22176] Host "[IP] 192.168.2.221 [Port] 0 [Flags] 2 [Guid] 3024943217 [EditorId] 3024943217 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J5TC0EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 5.32 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 272.36 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.7f1 (b16b3b16c7a0)
 [Subsystems] Discovering subsystems at path D:/programs/Unity Editors/2022.3.7f1/Editor/Data/Resources/UnitySubsystems
@@ -69,46 +69,46 @@ Initialize mono
 Mono path[0] = 'D:/programs/Unity Editors/2022.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'D:/programs/Unity Editors/2022.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/programs/Unity Editors/2022.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56028
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56716
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/programs/Unity Editors/2022.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: D:/programs/Unity Editors/2022.3.7f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.004746 seconds.
-- Loaded All Assemblies, in  0.372 seconds
+Registered in 0.004514 seconds.
+- Loaded All Assemblies, in  1.382 seconds
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.266 seconds
-Domain Reload Profiling: 637ms
-	BeginReloadAssembly (109ms)
+- Finished resetting the current domain, in  0.300 seconds
+Domain Reload Profiling: 1682ms
+	BeginReloadAssembly (895ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (35ms)
+	RebuildCommonClasses (34ms)
 	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (51ms)
-	LoadAllAssembliesAndSetupDomain (159ms)
-		LoadAssemblies (108ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (381ms)
+		LoadAssemblies (894ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (157ms)
-			TypeCache.Refresh (156ms)
-				TypeCache.ScanAssembly (142ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (266ms)
+		AnalyzeDomain (378ms)
+			TypeCache.Refresh (376ms)
+				TypeCache.ScanAssembly (359ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (300ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (202ms)
+		SetupLoadedEditorAssemblies (229ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (7ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (131ms)
-			ProcessInitializeOnLoadMethodAttributes (53ms)
+			ProcessInitializeOnLoadAttributes (139ms)
+			ProcessInitializeOnLoadMethodAttributes (71ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -118,52 +118,52 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\projects\Git\CatlikeCoding-Rendering\Rendering\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.642 seconds
-Refreshing native plugins compatible for Editor in 1.98 ms, found 3 plugins.
+- Loaded All Assemblies, in  6.850 seconds
+Refreshing native plugins compatible for Editor in 2.05 ms, found 3 plugins.
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.557 seconds
-Domain Reload Profiling: 1200ms
-	BeginReloadAssembly (147ms)
+- Finished resetting the current domain, in  0.597 seconds
+Domain Reload Profiling: 7447ms
+	BeginReloadAssembly (474ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (23ms)
-	RebuildCommonClasses (36ms)
-	RebuildNativeTypeToScriptingClass (12ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (15ms)
 	initialDomainReloadingComplete (39ms)
-	LoadAllAssembliesAndSetupDomain (408ms)
-		LoadAssemblies (291ms)
+	LoadAllAssembliesAndSetupDomain (6280ms)
+		LoadAssemblies (5905ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (200ms)
-			TypeCache.Refresh (175ms)
-				TypeCache.ScanAssembly (160ms)
-			ScanForSourceGeneratedMonoScriptInfo (18ms)
+		AnalyzeDomain (779ms)
+			TypeCache.Refresh (752ms)
+				TypeCache.ScanAssembly (734ms)
+			ScanForSourceGeneratedMonoScriptInfo (20ms)
 			ResolveRequiredComponents (5ms)
-	FinalizeReload (558ms)
+	FinalizeReload (597ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (399ms)
+		SetupLoadedEditorAssemblies (397ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (6ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (87ms)
-			ProcessInitializeOnLoadAttributes (276ms)
+			BeforeProcessingInitializeOnLoad (88ms)
+			ProcessInitializeOnLoadAttributes (275ms)
 			ProcessInitializeOnLoadMethodAttributes (21ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (11ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 2.25 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.38 seconds
+Refreshing native plugins compatible for Editor in 2.11 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3104 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (56.4 KB). Loaded Objects now: 3571.
-Memory consumption went from 122.8 MB to 122.8 MB.
-Total: 3.994200 ms (FindLiveObjects: 0.237400 ms CreateObjectMapping: 0.224700 ms MarkObjects: 3.430300 ms  DeleteObjects: 0.100600 ms)
+Unloading 3105 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (56.5 KB). Loaded Objects now: 3572.
+Memory consumption went from 123.4 MB to 123.3 MB.
+Total: 4.363600 ms (FindLiveObjects: 0.408700 ms CreateObjectMapping: 0.432000 ms MarkObjects: 3.417600 ms  DeleteObjects: 0.104100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -180,33 +180,41 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 215457.048729 seconds.
-  path: Assets/Scenes/Advanced Rendering/Flat and Wireframe Shading.unity
-  artifactKey: Guid(4d462929279417440bffdfa3b0673ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Advanced Rendering/Flat and Wireframe Shading.unity using Guid(4d462929279417440bffdfa3b0673ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cb880c05a58237dc86693f01ca82169') in 0.002484 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 33.043267 seconds.
-  path: Assets/Props/Scripts/Advanced Rendering/Flat and Wireframe Shading/My Lightmapping.cginc
-  artifactKey: Guid(26d76d92fc641a4438ebd3359f66d529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Advanced Rendering/Flat and Wireframe Shading/My Lightmapping.cginc using Guid(26d76d92fc641a4438ebd3359f66d529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2d9c53281da7032ab2dbf61cf06625d') in 0.009617 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Props/Scripts/Advanced Rendering/Flat and Wireframe Shading/My Shadows.cginc
-  artifactKey: Guid(38aef12ff11b6f04eb75295f6507410d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Advanced Rendering/Flat and Wireframe Shading/My Shadows.cginc using Guid(38aef12ff11b6f04eb75295f6507410d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0dd763413972b8d3363227b38c29203') in 0.000651 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 5361.614689 seconds.
+  Time since last request: 279481.895456 seconds.
   path: Assets/Props/Scripts/Advanced Rendering/Flat and Wireframe Shading/MyFlatWireframe.cginc
   artifactKey: Guid(ecc15d429b913dd45b5904b2c799b43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/Scripts/Advanced Rendering/Flat and Wireframe Shading/MyFlatWireframe.cginc using Guid(ecc15d429b913dd45b5904b2c799b43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fe3fc36f11c53d0e1137e16f6cf872a') in 0.030632 seconds
-Number of updated asset objects reloaded before import = 22
+Start importing Assets/Props/Scripts/Advanced Rendering/Flat and Wireframe Shading/MyFlatWireframe.cginc using Guid(ecc15d429b913dd45b5904b2c799b43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5675a84cff66d6593fec88f665ca8010') in 0.016901 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Props/Scripts/Advanced Rendering/Flat and Wireframe Shading/My Lighting Input.cginc
+  artifactKey: Guid(401ef31fe051de743a221d299c1422dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Scripts/Advanced Rendering/Flat and Wireframe Shading/My Lighting Input.cginc using Guid(401ef31fe051de743a221d299c1422dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '043e20d74f9aa5cccbab03cbb791671f') in 0.001023 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Props/Scripts/Advanced Rendering/Flat and Wireframe Shading/My Lighting.cginc
+  artifactKey: Guid(66abe7f59dfe4624b8f8a2bc04a55073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Scripts/Advanced Rendering/Flat and Wireframe Shading/My Lighting.cginc using Guid(66abe7f59dfe4624b8f8a2bc04a55073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe35161d0d66a3102f70df074620dac9') in 0.000986 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 430.082625 seconds.
+  path: Assets/Props/Scripts/Advanced Rendering/Flat and Wireframe Shading/My Lighting Input.cginc
+  artifactKey: Guid(401ef31fe051de743a221d299c1422dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Scripts/Advanced Rendering/Flat and Wireframe Shading/My Lighting Input.cginc using Guid(401ef31fe051de743a221d299c1422dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8a13c57214b28519604f8a699c61ea7') in 0.001411 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 8575.606711 seconds.
+  path: Assets/Props/Scripts/Advanced Rendering/Flat and Wireframe Shading/MyFlatWireframe.cginc
+  artifactKey: Guid(ecc15d429b913dd45b5904b2c799b43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/Scripts/Advanced Rendering/Flat and Wireframe Shading/MyFlatWireframe.cginc using Guid(ecc15d429b913dd45b5904b2c799b43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cead8f735806585a7027e0183ff7b4d') in 0.007138 seconds
+Number of updated asset objects reloaded before import = 1
 Number of asset objects unloaded after import = 1
