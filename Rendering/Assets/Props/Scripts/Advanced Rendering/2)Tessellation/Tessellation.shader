@@ -3,6 +3,7 @@ Shader "_MyShaders/_CatlikeCoding/Advanced Rendering/2)Tessellation"
     Properties
     {
 		_TessellationUniform ("Tessellation Uniform", Range(1, 64)) = 1
+		_TessellationEdgeLength ("Tessellation Edge Length", Range(5, 100)) = 50
 
 		_Color ("Tint", Color) = (1, 1, 1, 1)
 		_MainTex ("Albedo", 2D) = "white" {}
@@ -85,6 +86,7 @@ Shader "_MyShaders/_CatlikeCoding/Advanced Rendering/2)Tessellation"
 			#pragma multi_compile _ LOD_FADE_CROSSFADE
 			//#pragma multi_compile_instancing
 			//#pragma instancing_options lodfade
+			#pragma shader_feature _TESSELLATION_EDGE
 
 			#pragma shader_feature _ _RENDERING_CUTOUT _RENDERING_FADE _RENDERING_TRANSPARENT
 			#pragma shader_feature _METALLIC_MAP
@@ -130,6 +132,7 @@ Shader "_MyShaders/_CatlikeCoding/Advanced Rendering/2)Tessellation"
 			#pragma multi_compile_fwdadd_fullshadows
 			#pragma multi_compile_fog
 			#pragma multi_compile _ LOD_FADE_CROSSFADE
+			#pragma shader_feature _TESSELLATION_EDGE
 
 			#pragma shader_feature _ _RENDERING_CUTOUT _RENDERING_FADE _RENDERING_TRANSPARENT
 			#pragma shader_feature _METALLIC_MAP
@@ -170,6 +173,7 @@ Shader "_MyShaders/_CatlikeCoding/Advanced Rendering/2)Tessellation"
 			#pragma multi_compile _ LOD_FADE_CROSSFADE
 			//#pragma multi_compile_instancing
 			//#pragma instancing_options lodfade
+			#pragma shader_feature _TESSELLATION_EDGE
 
 			#pragma shader_feature _ _RENDERING_CUTOUT 
 			#pragma shader_feature _METALLIC_MAP

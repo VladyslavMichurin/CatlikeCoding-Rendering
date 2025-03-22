@@ -9,6 +9,10 @@ public class MyCatlikeCodingShaderGUI7 : ShaderGUI
     MaterialEditor editor;
     MaterialProperty[] properties;
 
+    enum TessellationMode
+    {
+        Uniform, Edge
+    }
     enum SmoothnessSource
     {
         Uniform, Albedo, Metallic
@@ -112,10 +116,34 @@ public class MyCatlikeCodingShaderGUI7 : ShaderGUI
     {
         GUILayout.Label("Tessellation", EditorStyles.boldLabel);
         EditorGUI.indentLevel += 2;
-        editor.ShaderProperty(
-            FindProperty("_TessellationUniform"),
-            MakeLabel("Uniform")
-        );
+
+        TessellationMode mode = TessellationMode.Uniform;
+        if (IsKeywordEnabled("_TESSELLATION_EDGE"))
+        {
+            mode = TessellationMode.Edge;
+        }
+        EditorGUI.BeginChangeCheck();
+        mode = (TessellationMode)EditorGUILayout.EnumPopup(MakeLabel("Mode"), mode);
+        if (EditorGUI.EndChangeCheck())
+        {
+            RecordAction("Tessellation Mode");
+            SetKeyword("_TESSELLATION_EDGE", mode == TessellationMode.Edge);
+        }
+
+        if (mode == TessellationMode.Uniform)
+        {
+            editor.ShaderProperty(
+                FindProperty("_TessellationUniform"),
+                MakeLabel("Uniform")
+            );
+        }
+        else
+        {
+            editor.ShaderProperty(
+                FindProperty("_TessellationEdgeLength"),
+                MakeLabel("Edge Length")
+            );
+        }
         EditorGUI.indentLevel -= 2;
     }
     void DoSemitransparentShadows()
