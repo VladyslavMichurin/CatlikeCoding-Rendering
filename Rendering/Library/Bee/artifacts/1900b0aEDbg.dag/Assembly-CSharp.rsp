@@ -352,6 +352,7 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.UI.ref.dll"
 -analyzer:"D:/programs/Unity Editors/2022.3.7f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"D:/programs/Unity Editors/2022.3.7f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Props/Scripts/Advanced Rendering 2/1)Bloom/BloomEffect.cs"
 "Assets/Props/Scripts/Rendering/Rendering 1/CameraTransformation.cs"
 "Assets/Props/Scripts/Rendering/Rendering 1/PositionTransformation.cs"
 "Assets/Props/Scripts/Rendering/Rendering 1/RotationTransformation.cs"

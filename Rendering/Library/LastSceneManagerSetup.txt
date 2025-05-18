@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Advanced Rendering/3) Surface Displacement.unity
+- path: Assets/Scenes/Advanced Rendering 2/1)Bloom.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
