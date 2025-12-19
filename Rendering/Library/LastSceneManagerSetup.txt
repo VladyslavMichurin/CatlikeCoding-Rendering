@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Advanced Rendering 2/2)Depth of Field.unity
+- path: Assets/Scenes/Advanced Rendering 2/3)FXAA.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

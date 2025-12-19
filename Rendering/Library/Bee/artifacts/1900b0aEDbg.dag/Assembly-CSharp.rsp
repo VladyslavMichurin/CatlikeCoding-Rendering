@@ -354,6 +354,7 @@
 -analyzer:"D:/programs/Unity Editors/2022.3.7f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Props/Scripts/Advanced Rendering 2/1)Bloom/BloomEffect.cs"
 "Assets/Props/Scripts/Advanced Rendering 2/2)Depth of Field/DepthOfFieldEffect.cs"
+"Assets/Props/Scripts/Advanced Rendering 2/3)FXAA/FXAAEffect.cs"
 "Assets/Props/Scripts/Rendering/Rendering 1/CameraTransformation.cs"
 "Assets/Props/Scripts/Rendering/Rendering 1/PositionTransformation.cs"
 "Assets/Props/Scripts/Rendering/Rendering 1/RotationTransformation.cs"
