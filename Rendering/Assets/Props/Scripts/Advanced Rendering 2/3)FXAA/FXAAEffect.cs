@@ -4,23 +4,26 @@ using System;
 [ExecuteInEditMode, ImageEffectAllowedInSceneView]
 public class FXAAEffect : MonoBehaviour
 {
+    public enum LuminanceMode { Alpha, Green, Calculate }
+    public LuminanceMode luminanceSource;
+
     [Range(0f, 1f)]
-    public float subpixelBlending = 1f;
+    public float subpixelBlending = 0.75f;
 
     [Range(0.0312f, 0.0833f)]
-    public float contrastThreshold = 0.0312f;
+    public float contrastThreshold = 0.0833f;
 
     [Range(0.063f, 0.333f)]
-    public float relativeThreshold = 0.063f;
+    public float relativeThreshold = 0.166f;
+
+    public bool lowQuality = true;
+    public bool gammaBlending = true;
 
     [HideInInspector]
     public Shader fxaaShader;
 
     [NonSerialized]
     Material fxaaMaterial;
-
-    public enum LuminanceMode { Alpha, Green, Calculate }
-    public LuminanceMode luminanceSource;
 
     public enum shaderPass { luminancePass = 0, fxaaPass }
 
@@ -35,6 +38,24 @@ public class FXAAEffect : MonoBehaviour
         fxaaMaterial.SetFloat("_ContrastThreshold", contrastThreshold);
         fxaaMaterial.SetFloat("_RelativeThreshold", relativeThreshold);
         fxaaMaterial.SetFloat("_SubpixelBlending", subpixelBlending);
+
+        if (lowQuality)
+        {
+            fxaaMaterial.EnableKeyword("LOW_QUALITY");
+        }
+        else
+        {
+            fxaaMaterial.DisableKeyword("LOW_QUALITY");
+        }
+
+        if (gammaBlending)
+        {
+            fxaaMaterial.EnableKeyword("GAMMA_BLENDING");
+        }
+        else
+        {
+            fxaaMaterial.DisableKeyword("GAMMA_BLENDING");
+        }
 
 
         if (luminanceSource == LuminanceMode.Calculate) 

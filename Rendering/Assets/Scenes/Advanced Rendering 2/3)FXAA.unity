@@ -2455,11 +2455,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85565bb2587fdc944b23a245f36541aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  subpixelBlending: 0.55
-  contrastThreshold: 0.083
-  relativeThreshold: 0.333
-  fxaaShader: {fileID: 4800000, guid: 9ade30c5473dfd6448bf9f999b557700, type: 3}
   luminanceSource: 2
+  subpixelBlending: 0.75
+  contrastThreshold: 0.0833
+  relativeThreshold: 0.166
+  lowQuality: 1
+  gammaBlending: 1
+  fxaaShader: {fileID: 4800000, guid: 9ade30c5473dfd6448bf9f999b557700, type: 3}
 --- !u!81 &1375905523
 AudioListener:
   m_ObjectHideFlags: 0
