@@ -186,3 +186,4 @@ Cmd: compileSnippet
   error: 1 plat 4 at (246): use of potentially uninitialized variable (ApplyFXAA)
  ok=1 outsize=5314
 
+Cmd: shutdown
