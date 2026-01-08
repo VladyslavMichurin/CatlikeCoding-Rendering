@@ -2,10 +2,13 @@ Shader "_MyShaders/_CatlikeCoding/Advanced Rendering/7)Triplanar Mapping"
 {
    Properties {
 		[NoScaleOffset] _MainTex ("Albedo", 2D) = "white" {}
-		[NoScaleOffset] _MOSMap ("MOS", 2D) = "white" {}
+		[NoScaleOffset] _MOHSMap ("MOHS", 2D) = "white" {}
 		[NoScaleOffset] _NormalMap ("Normals", 2D) = "white" {}
 
 		_MapScale ("Map Scale", Float) = 1
+		_BlendOffset ("Blend Offset", Range(0, 0.5)) = 0.25
+		_BlendExponent ("Blend Exponent", Range(1, 8)) = 2
+		_BlendHeightStrength ("Blend Height Strength", Range(0, 0.99)) = 0.5
 	}
 
 	SubShader {

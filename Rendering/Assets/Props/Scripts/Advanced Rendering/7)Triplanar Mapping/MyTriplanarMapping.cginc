@@ -6,8 +6,9 @@
 	#include "My Lighting Input.cginc"
 
 	// it's not included in "My Lighting Input.cginc"
-	sampler2D _MOSMap;
+	sampler2D _MOHSMap;
 	float _MapScale;
+	float _BlendOffset, _BlendExponent, _BlendHeightStrength;
 
 	struct TriplanarUV 
 	{
@@ -46,9 +47,13 @@
 		return triUV;
 
 	}
-	float3 GetTriplanarWeights (SurfaceParameters parameters) 
+	float3 GetTriplanarWeights 
+		(SurfaceParameters parameters, float heightX, float heightY, float heightZ) 
 	{
 		float3 triW = abs(parameters.normal);
+		triW = saturate(triW - _BlendOffset);
+		triW *= lerp(1, float3(heightX, heightY, heightZ), _BlendHeightStrength);
+		triW = pow(triW, _BlendExponent);
 		return triW / (triW.x + triW.y + triW.z);
 	}
 	float3 BlendTriplanarNormal (float3 mappedNormal, float3 surfaceNormal)
@@ -68,9 +73,9 @@
 		float3 albedoY = tex2D(_MainTex, triUV.y).rgb;
 		float3 albedoZ = tex2D(_MainTex, triUV.z).rgb;
 
-		float4 mosX = tex2D(_MOSMap, triUV.x);
-		float4 mosY = tex2D(_MOSMap, triUV.y);
-		float4 mosZ = tex2D(_MOSMap, triUV.z);
+		float4 mohsX = tex2D(_MOHSMap, triUV.x);
+		float4 mohsY = tex2D(_MOHSMap, triUV.y);
+		float4 mohsZ = tex2D(_MOHSMap, triUV.z);
 
 		float3 tangentNormalX = UnpackNormal(tex2D(_NormalMap, triUV.x));
 		float3 tangentNormalY = UnpackNormal(tex2D(_NormalMap, triUV.y));
@@ -99,20 +104,20 @@
 		float3 worldNormalY = BlendTriplanarNormal(tangentNormalY, parameters.normal.xzy).xzy;
 		float3 worldNormalZ = BlendTriplanarNormal(tangentNormalZ, parameters.normal);
 
-		float3 triW = GetTriplanarWeights(parameters);
+		float3 triW = GetTriplanarWeights(parameters, mohsX.z, mohsY.z, mohsZ.z);
 
 		float3 finalAlbedoX = albedoX * triW.x;
 		float3 finalAlbedoY = albedoY * triW.y;
 		float3 finalAlbedoZ = albedoZ * triW.z;
 		surface.albedo = finalAlbedoX + finalAlbedoY + finalAlbedoZ;
 
-		float4 finalMosX = mosX * triW.x;
-		float4 finalMosY = mosY * triW.y;
-		float4 finalMosZ = mosZ * triW.z;
-		float4 finalMos = finalMosX + finalMosY + finalMosZ;
-		surface.metallic = finalMos.x;
-		surface.occlusion = finalMos.y;
-		surface.smoothness = finalMos.a;
+		float4 finalMohsX = mohsX * triW.x;
+		float4 finalMohsY = mohsY * triW.y;
+		float4 finalMohsZ = mohsZ * triW.z;
+		float4 finalMohs = finalMohsX + finalMohsY + finalMohsZ;
+		surface.metallic = finalMohs.x;
+		surface.occlusion = finalMohs.y;
+		surface.smoothness = finalMohs.a;
 
 		float3 finalNormalX = worldNormalX * triW.x;
 		float3 finalNormalY = worldNormalY * triW.y;

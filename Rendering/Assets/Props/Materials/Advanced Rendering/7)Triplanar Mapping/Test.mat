@@ -47,8 +47,12 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _MOHSMap:
+        m_Texture: {fileID: 2800000, guid: 8407572acd47f674b9d04f7066a852bb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MOSMap:
-        m_Texture: {fileID: 2800000, guid: 38235d4367ba37442a727a570e3ed487, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8407572acd47f674b9d04f7066a852bb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -77,6 +81,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _BlendExponent: 4
+    - _BlendHeightStrength: 0.35
+    - _BlendOffset: 0.375
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailBumpScale: 1
